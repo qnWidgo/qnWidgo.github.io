@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style> table, tr, th, td {
+        border : solid 3px aquamarine;
+                border-style:none;
+                border-collapse: collapse;
+                padding: 3px;
+    }
+    </style>
+    <title>문의 게시판 글쓰기</title>
+</head>
+
+<body bgcolor="#FFF6D3">
+<!-- 이동 테이블 -->
+<table>
+  <tr> 
+      <td colspan="3" bgcolor="#5AE1EF"> <big> <b>22261005 김기현
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="index.html">🏅메인페이지</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="1005_weather.html">⛅일기예보</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="1005_formtag.html">💬폼태그</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="1005_form2.html">📝문의 게시판 글쓰기</a></b></big></td>
+  </tr>
+  </table>
+  
+  <h2>📝문의 게시판 글쓰기</h2>
+
+    <form>
+    <table>
+    <tr>
+      <td>이름</td> <td><input type="text" size="10"></td>
+    </tr>
+      
+    <tr>
+      <td>비밀번호</td> <td><input type="password" size="10"></td>  
+    </tr>
+      
+    <tr>
+      <td>이메일</td> <td><input type="text" size="10">@
+          <select>
+            <option>선택하세요.</option>
+            <option>naver.com</option>
+            <option>hanmail.com</option>
+            <option>gmail.com</option>
+            <option>직접 입력</option>
+          </select> 
+        </td>
+    </tr>
+      
+    <tr>
+        <td>제목</td> <td><input type="text" size="10" ></td>
+    </tr>
+
+    <tr>
+        <td>내용</td> <td><textarea rows="6" cols="50"></textarea></td>
+    </tr>
+
+    <tr>
+        <td>파일 첨부</td> <td><input type="file"></td>
+    </tr>
+
+    <tr>
+         <td></td><td>5MB 이하의 파일만 첨부 가능합니다.</td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><button>확인</button></td>
+    </tr>
+
+    </table>
+    </form>
+</body>
+</html>
