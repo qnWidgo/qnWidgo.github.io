@@ -1,1 +1,0 @@
-# qnWidgo.github.io
