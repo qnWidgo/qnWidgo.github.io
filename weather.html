@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+table{
+            background-color: #FFFFFF;
+            border : solid px #5AC6F4;
+            border-style: none;
+            border-collapse: collapse;
+            padding: 0 auto;
+            font-family: '고딕';
+            font-weight: 400;
+            font-style: 14px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        tr {
+            border: 1px solid #5AC6F4;
+            margin: 0px auto;}
+        th,td {
+            width: 100px;
+            height: 60px;
+            text-align: center;
+            border: 1px solid #5AC6F4;
+            vertical-align: middle;
+        }
+
+
+        div {
+            border: solid 0px black;
+        
+/* boeder값이 좌우로 4번 즉 4px가 더 들어가기 때문에, body의 width가 960 + 4 = 964가 되어야함 */
+        }
+        body {
+            width: 1205px; /*양옆 길이 설정*/
+            margin: 0 auto; /* margin : 상하px / 좌우px*/   
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 150%;
+            font-weight: 400;
+            color: #4F3200;
+        }
+        .clear {
+            clear : both;
+        }
+/*구획 하는데에 이용하는 태그, folat같은 것들 이제 그만쓰라고 멈추는 일을 한다.*/    
+#aside {
+            border: dotted 2px #EB9500;
+            float: left;
+            width: 180px;
+            line-height: 1px;
+           
+        }    
+        #section {
+            float: right;  
+/* folat 속성 : 기존에 그냥 이용하면, 한 블럭을 다 쓰는 태그들을, CSS에서 미리 구간을 정해둠으로써 (left.right에서 일정 width값만 이용해라!), 여러 블럭태그들이 한 블럭을 나눠서 사용하도록 만드는 태그*/
+            width: 1020px;
+        }
+
+        #section_2 {
+            width : 1030px;
+            float: right;
+
+        }
+
+        a:link, a:visited {
+    
+    color:  #4F3200;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    color: #EB9500;
+    }
+        .span {
+            background-color: antiquewhite;
+            color: red;
+        }
+
+        #footer {
+            font-size: 10px;
+            color: gray;
+            line-height: 110%;
+            text-align: center;
+        }
+    </style>
+
+    <title>대전 O! WORLD</title>
+
+</head>
+
+
+<body>
+
+<!--헤더-->
+<div id="header" style="text-align: center; line-height: 10px;">
+    <a style="background: none;" href="index.html"><img src="oh-1.png" height="110"></a><br>
+    <b style="color: #EA77CA; font-size: 12px;">환상의 대전 O! WOLRD</b>
+     <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+  </div>
+
+<!--네비게이션-->
+  <div id="navigation" style="text-align: center; font-weight: bold;">
+   
+              
+             <a href="map.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 정보안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             
+             <a href="animal.html" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물사 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="weather.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 날씨 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="money.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;운임요금 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="faq.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b></th>
+             <br><br><br>
+  </div>
+
+
+    <div class="clear">
+    </div>
+
+<!--사이드-->
+  <div id="aside" style="border-radius: 16px; text-align: center;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p><b style="color: #EB9500; font-size: 18px;"><span style="border-radius: 5em; padding: 1em; background: #FCE8CC">동물원 날씨 안내</span></b></p>
+    <a href="#tag1" style="font-size: 14px; font-weight: bold;"> <p> 🦁 오월드 오늘의 날씨</p></a><br>
+    <a href="#tag2" style="font-size: 14px; font-weight: bold;"> <p> 🦁 오월드 금주의 날씨 </p></a><br>
+    <a href="#tag3" style="font-size: 14px; font-weight: bold;"> <p> 🦁 오월드 계절 소식지 </p></a><br><br><br>
+</div>
+<!--내용부분-->
+    <div id="section">
+        <!--날씨 테이블-->
+        <!--오늘의 날씨-->
+        <a id="tag1"></a>
+        <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">오월드 오늘의 날씨</p>
+        <p style="font-size: 12px; color: gray; text-align: center;">오월드에 방문하는 오늘! 동물원의 날씨는 어떨까요?</p>
+  
+        <table>
+                <tr style="background:url(sky.jpg); font-size: large;">
+                    <td colspan="7"><smell style="font-size: small; color: gray;">이시각 현재 (2023.10.22.일 13:45 기준)</smell><br> <img src="sun.png" height="200"> <br><b style="font-size: x-large;">19.3 °C&nbsp;</b>/ 어제보다 2.3 °C ↑ <br><br> 날씨가 맑아요! 동물 친구들을 만나기 아주 좋은 날씨입니다!<br><br> <small style="font-weight:400;">미세먼지&nbsp;&nbsp;&nbsp;초미세먼지&nbsp;&nbsp;&nbsp;자외선지수</small><br><small>좋음&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;매우좋음&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보통</small><br><br></td>
+                </tr>
+                <tr style="background-color: #DDF2F2;">
+                    <td></td><th>14시</th><th>15시</th><th>16시</th><th>17시</th><th>18시</th><th>19시</th>
+                </tr>
+                <tr>
+                    <th style="background-color: #DDF2F2;">날씨</th> <td><img src="shine.png" height="60"></td><td><img src="sun.png" height="60"></td> <td><img src="shine.png" height="60"></td> <td><img src="sun.png" height="60"></td><td><img src="sun.png" height="60"></td> <td><img src="shine.png" height="60"></td>
+                </tr>
+    
+                <tr>
+                    <th style="background-color: #DDF2F2;">강수</th> <td>10%</td> <td>0%</td> <td>10%</td> <td>20%</td> <td>10%</td> <td>0%</td>
+                </tr>
+    
+                <tr>
+                    <th style="background-color: #DDF2F2;">바람</th> <td><img src="nw wind.png" height="20"><br>북서풍 / 2 ms</td> <td><img src="nw wind.png" height="20"><br>북서풍 / 1 ms</td> <td><img src="nw wind.png".png height="20"><br>북서풍 / 2 ms</td> <td><img src="nw wind.png" height="20"><br>북서풍 / 2 ms</td> <td><img src="n wind.png" height="20"><br>북풍 / 1 ms</td> <td><img src="n wind.png" height="20"><br>북풍 / 2 ms</td>
+                </tr>
+                
+                <tr>
+                    <th style="background-color: #DDF2F2;">습도</th> <td>55%</td> <td>60%</td> <td>60%</td> <td>50%</td> <td>55%</td> <td>55%</td>
+                </tr>
+        </table><br><br><br>
+
+     <!--구분선-->
+     <hr width="70%" color="#DDF2F2" noshade/><br><br>
+
+       <!--이번주 날씨-->
+       <a id="tag2"></a>
+       <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">오월드 금주의 날씨 </p>
+       <p style="font-size: 12px; color: gray; text-align: center;">오월드에 방문하는 이번주! 동물원의 날씨는 어떨까요?</p>
+
+        <table>
+            <tr style="background-color: #DDF2F2">
+                <th colspan="2">23일(월)</th> <th colspan="2">24일(화)</th> <th colspan="2">25일(수)</th> <th colspan="2">26일(목)</th><th colspan="2">27일(금)</th><th colspan="2">28일(토)</th><th colspan="2">29일(일)</th>
+            </tr>
+
+            <tr>
+                <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td> <td>오전</td> <td>오후</td>  
+            </tr>
+
+            <tr>
+                 <td><img src="shine.png" height="50"></td><td><img src="shine.png" height="50"></td> <td><img src="shine.png" height="50"></td> <td><img src="rain.png" height="50"></td><td><img src="rain.png" height="50"></td> <td><img src="rain.png" height="50"><td><img src="shine.png" height="50"></td><td><img src="shine.png" height="50"></td> <td><img src="shine.png" height="50"></td> <td><img src="rain.png" height="50"></td><td><img src="rain.png" height="50"></td> <td><img src="rain.png" height="50"><td><img src="rain.png" height="50"></td><td><img src="rain.png" height="50"></td>
+            </tr>
+            
+        </table> <br><br><br>
+    </div>
+
+    <div class="clear">
+    </div>
+
+    <div id="section_2" style="background-image: url(pp_2.png); text-align: center; color: #61312B; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <a id="tag3"></a><br>
+        <p style="font-size: 20px;"><b>🍁 오월드 계절 소식지, 10월</b></p>
+        <hr width="60%" color="#C47D49" noshade/>
+        <p>10월에 접어들면서, 가을이 점차 깊어지는 것을 느낄수 있습니다. 그렇다면 우리 동물 친구들은 가을을 어떻게 보내고 있을까요?</p>
+        <br>
+        <p>먼저 가장 큰 변화는 식단변화입니다. 여러분들도 가을에는 다양한 과일을 만나보실수 있는데요. </p>
+        <p>가을이 되면 식단표에 귤과 오렌지 대신, 제철을 맞는 감과 배가 새롭게 추가됩니다. 특히 마못 친구들이 감을 좋아한답니다. </p>
+        <br>
+        <p>가을이 되면 낙엽이 지는데요. 이러한 떨어지는 낙엽을 특식으로 먹는 동물들이 있습니다.</p>
+        <p>바로 우리 왈라루 친구들입니다. 왈라루 친구들은 초식동물인데요.</p>
+        <p>이렇게 가을에 낙엽이 지면, 등나무 잎과 같은 떨어지는 잎사귀들을 먹습니다.</p>
+        <p>마치 이 계절에만 나오는 특식인 셈이죠.</p>
+        <br>
+        <p>올 가을, 새로짓는 몽키빌리지가 완공됨에 따라, 원숭이들도 가을맞이 이사를 간답니다.</p>
+
+        <p>이렇게 다양한 변화를 맞는 오월드의 가을, 동물 친구들과 가을 나들이를 하러 오시는건 어떨까요?</p>
+        <br><br><br>
+  
+        
+    </div>
+
+    <div class="clear">
+    </div>
+<!--푸터-->
+    <div id="footer">
+        <br><br>
+       <!--구분선-->
+       <hr width="100%" color="#EB9500" noshade/><br>
+       <p style="font-size: 12px;">동물원 긴급연락망 안내: 양호실: 042-####-#### 미아보호소: 042-###-#### 물품보관소 :042-###-#### ※ 아이를 잃어버리신 경우, 가까운 직원에게 알려주시기 바랍니다.</p><br>
+       <p>대전 O!WORLD : 35073 대전광역시 중구 사정공원로 70 (사정동) 대전오월드(305-82-12294) TEL 042-580-4820 FAX 042-580-4711</p>
+       <p>오월드 인스타그램 : https://www.instagram.com/daejeon_o_world/</p>
+       <p>오월드 페이스북 : https://www.facebook.com/daejeonoworld/</p>
+       <p>오월드 유튜브 : https://www.youtube.com/watch?v=wQV0qaPdaPs</p>
+       <p>오월드 관련 방송 : 유튜브 "펫트라슈" " 대전오월드" "애니멀클립" 등..  </p>
+    </div>
+
+    <div class="clear">
+    </div>
+
+</body>
+</html>

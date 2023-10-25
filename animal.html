@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: solid 0px black; 
+/* boeder값이 좌우로 4번 즉 4px가 더 들어가기 때문에, body의 width가 960 + 4 = 964가 되어야함 */
+        }
+        body {
+            width: 1205px; /*양옆 길이 설정*/
+            margin: 0 auto; /* margin : 상하px / 좌우px*/
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 150%;
+            font-weight: 400;
+            color: #4F3200;
+        }
+        .clear {
+            clear : both;
+        }
+/*구획 하는데에 이용하는 태그, folat같은 것들 이제 그만쓰라고 멈추는 일을 한다.*/        
+#aside {
+            border: dotted 2px #EB9500;
+            float: left;
+            width: 180px;
+            line-height: 1px;
+        }    
+
+        #aside2 {
+            border: dotted 0px #EB9500;
+            float: left;
+            width: 180px;
+            line-height: 1px;
+        }    
+
+
+        #section {
+            float: right;  
+/* folat 속성 : 기존에 그냥 이용하면, 한 블럭을 다 쓰는 태그들을, CSS에서 미리 구간을 정해둠으로써 (left.right에서 일정 width값만 이용해라!), 여러 블럭태그들이 한 블럭을 나눠서 사용하도록 만드는 태그*/
+            width: 1020px;
+        }
+
+        #v1 { 
+            float: right;
+            width: 1020px;
+            text-align: center;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        
+
+
+
+        table, tr, td, th {
+        background-color: #FFFFFF;
+        border : solid 0px black;
+                border-style: none;
+                border-collapse: collapse;
+                padding: 0 auto;
+                font-family: "고딕";
+                font-weight: 300;
+                font-style: 14px;
+                margin: 0 auto;
+        }
+
+        li {
+            list-style-type: disc;
+            font-family: "고딕";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+       } 
+
+       .red { color:red; font-weight: bold;}
+
+       .gray { color: gray; font-size: 12px;}
+
+       .img_center {text-align: center;}
+
+       a:link, a:visited {
+    
+       color:  #4F3200;
+       padding: 15px 10px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       }
+
+       a:hover, a:active {
+       color: #EB9500;
+       }
+
+       #footer {
+            font-size: 10px;
+            color: gray;
+            line-height: 110%;
+            text-align: center;
+        }
+ 
+    </style>
+
+    <title>대전 O! WORLD</title>
+
+</head>
+
+
+<body>
+<!--헤더-->
+<div id="header" style="text-align: center; line-height: 10px;">
+    <a style="background: none;" href="index.html"><img src="oh-1.png" height="110"></a><br>
+    <b style="color: #EA77CA; font-size: 12px;">환상의 대전 O! WOLRD</b>
+     <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+  </div>
+
+<!--네비게이션-->
+  <div id="navigation" style="text-align: center; font-weight: bold;">
+   
+   
+             <a href="map.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 정보안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             
+             <a href="animal.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물사 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="weather.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 날씨 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="money.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;운임요금 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="faq.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             <br><br><br>
+
+  </div>
+    <div class="clear">
+    </div>
+
+<!--사이드-->
+  <div id="aside" style="border-radius: 16px; text-align: center;">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <p><b style="color: #EB9500; font-size: 18px;"><span style="border-radius: 5em; padding: 1em; background: #FCE8CC">동물사 소개</span></b></p>
+    <a href="#tag1" style="font-size: 14px; font-weight: bold;"> <p> 🦁 관람시 유의사항</p></a><br>
+    <a href="#tag2" style="font-size: 14px; font-weight: bold;"> <p> 🦁 동물 친구들 소개 </p></a><br>
+    <a href="#tag3" style="font-size: 14px; font-weight: bold;"> <p> 🦁 동물 친구들 생활 </p></a><br>
+</div>
+<!--내용부분-->
+    <div id="section">
+  <!--가장큰배너-->
+  <p style="text-align: center;"><img src="inbanner.png" height="500" width="900"></p><br>
+
+  <!--동물 관람시 유의사항-->
+  <a id="tag1"></a>
+  <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00;">관람시 유의사항</p>
+  <p style="font-size: 12px; color: gray; text-align: center;">안전하고 즐거운 관람을 위해, 이것만은 꼭! 지켜주세요.</p>
+
+  <ul>
+    
+        <li><b>이벤트 공연 안내</b> <br>
+        각 동물사에서 진행하는 이벤트 공연은, 날씨의 영향을 받아 취소 될 수 있습니다. 안내방송을 통해 확인해주시길 바랍니다. <br>공연 중 소리를 지르거나, 물건을 던지는 행위는 매우 위험하오니, 시작 전 안내사항을 잘 청취해주시기 바랍니다.</li><br>
+        <li><b>먹이주기 체험 안내</b> <br>
+        어린이 동물원 및 마운틴 사파리에는, 먹이주기 체험이 준비되어있습니다. <br>해당 체험 시, 지정된 먹이만을 주셔야 하오며, 지정된 동물들 이외의 다른 동물들에게 먹이를 주시는 행위는 삼가해 주시기 바랍니다<br><i style="color:gray;">(동물별로 먹이가 달라, 지정 동물이 아닌 다른 동물이 잘못 먹을시 위험할수 있습니다.)</i>
+        <br><span class="gray">지정된 먹이는 동물원 내부 자판기를 통해 구매하실 수 있으며, 개당 1,000원으로 현금으로만 구매가 가능합니다.</span></li>
+  </ul><br><br><br>
+
+  <!--동물 테이블-->
+    <!--구분선-->
+    <br><hr width="70%" color="#DDF2F2" noshade/><br><br>    
+  <a id="tag2"></a>
+  <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">동물 친구들 소개</p>
+  <p style="font-size: 12px; color: gray; text-align: center;">동물 친구들을 만나기 전에 미리 알아볼까요?</p>
+  <br>
+  
+  <table>
+    <tr>
+        <td><img src="fox.png" height="300" width="300"></td> <td style="padding: 20px;"></td> <td><b style="font-size: 18px;">사막여우</b>&nbsp;<small>(Vulpes zerda)</small><br><br> <b>서식지</b><br> 건조기후의 북아프리카 사막지대<br> <b>평균 수명</b><br> 10-13년 <br> <b>특징</b><br> 사막여우는 모든 개과 동물들 중 가장 작은 종이며, 매우 큰 귀를 가졌다.  사막여우는 보통 짝을 이루어산다.<br>대개 3월과 4월 사이 한번에 두 마리에서 다섯 마리 새끼를 낳는다.<br>임신기간과 수유기간 중에 수컷은 암컷과 새끼들을 돌보고 보호한다.<br> 사막여우의 굴은 부드러운 모래에 만들어지고 단순한 구조를 가지고 있다.<br> 오직 단단한 지반에서만 복잡한 구조의 굴을 만든다. <br>현재 오월드에는 약 14마리의 사막여우가 살고 있다.</td>
+    </tr>
+
+    <tr>
+        <td><img src="cat.png" height="300" width="300"></td> <td style="padding: 20px;"></td> <td><b style="font-size: 18px;">미어캣</b>&nbsp;<small>(Suricata suricatta)</small><br><br> <b>서식지</b><br>남아프리카 인근<br> <b>평균 수명</b><br>12-14년 <br> <b>특징</b><br>보통 20-30마리 정도가 집단생활을 하며, 여러 통로와 입구가 있는 굴에서 생활을 한다.<br>유대감이 강하기 때문에, 여왕이 아이를 낳으면, 다른 암컷과 수컷들이 지키고, 젖을 먹이며 함께 키워나간다.<br>미어캣이 두발로 서서 주위를 둘러보는 행동을 하는 이유는 주위를 경계하고, 천적을 감시하기 위해서이다.<br>현재 오월드에는 6마리가 살고 있다.</td>
+    </tr>
+
+    <tr>
+        <td><img src="wal.png" height="300" width="300"></td> <td style="padding: 20px;"></td> <td><b style="font-size: 18px;">왈라루</b>&nbsp;<small>(Macropus robustus)</small><br><br> <b>서식지</b><br>오스트레일리아 초원지대<br> <b>평균 수명</b><br>10-19년 <br> <b>특징</b><br>유대목 캥거루과 캥거루속의 동물들중에서 중형인 종이다.<br>수컷이 암컷보다 체구가 더 크며, 색깔도 더 진함으로, 외관으로도 쉽게 구분이 가능하다.<br>주로 단독생활을 하고 연중 임신이 가능하며, 새끼는 약 2cm정도의 아주 작은 체구로 태어나,<br>어미의 육아낭 속에서 230-270일 정도 생활한다.<br>현재 오월드에는 8마리의 왈라루가 살고있다.</td>
+    </tr>
+
+    <tr>
+    
+        <td><img src="alda.png" height="300" width="300"></td> <td style="padding: 20px;"></td> <td><b style="font-size: 18px;">알다브라 육지거북</b>&nbsp;<small>(Aldabrachelys gigantea)</small><br><br> <b>서식지</b><br>알다브라, 세이셸 제도<br> <b>평균 수명</b><br>80-120년<br> <b>특징</b><br>알다브라 거북은 현존하는 거북 종류중 2번째로 크기가 매우 큰 거북이다.<br>식사는 주로 채식을 하며, 당근,배추 같은 야채류부터 사과,참외,오렌지등 과일류까지 먹는다.<br> 오월드에 있는 거북이는 세이셸 제도에서 왔으며, 현재 119살정도로 추정한다.<br>반신욕을 좋아하기 때문에 사육장에 작은 물 웅덩이가 하나 있다.<br>종종 웅덩이에 앉아서 밖을 구경한다.</td>  
+    </tr>
+
+    <tr>
+    
+        <td><img src="goat.png" height="300" width="300"></td> <td style="padding: 20px;"></td> <td><b style="font-size: 18px;">자아넨 염소</b>&nbsp;<small>(Saanen)</small><br><br> <b>서식지</b><br>스위스 및 산악지역<br> <b>평균 수명</b><br>80-120년<br><b>특징</b><br>자아넨은 하얀색의 털을 가지고 있는게 특징이며, 스위스 산악지대가 원산지이다.<br> 보통 몸무게는 암컷이 45-60 수컷이 70-90kg 정도까지 나간다.<br>성질이 얌전한 편이며, 원산지의 특성에 맞게 추위에는 강하나, 고온다습한 환경에는 취약하다.<br>오월드에는 다양한 염소종 10마리가 살고있으며, 가장 사고뭉치인 "율무"가 자아넨 종이다.
+    </tr>
+  </table>
+</div>
+
+<div class="clear">
+</div>
+
+<div id="aside2"></div>
+
+<div id="v1">
+      <a id="tag3"></a>
+      <br><br><p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">동물 친구들 생활</p>
+      <p style="font-size: 12px; color: gray; text-align: center;">동물 친구들의 생활을 살짝 들여다볼까요?</p>
+      <p style="font-size: 12px; color: gray; text-align: center; line-height: 50%;"> ※ 각 비디오마다 음량이 조금씩 다를 수 있습니다. 음량에 유의해주세요.</p>
+      <table style="text-align: center;">
+        <tr>
+            <td><video height="400" controls>
+                <source src="tama.mp4" type="video/mp4">
+                <source src="tama.mp4" type="video/webm">
+                <source src="tama.mp4" type="video/ogg">    
+                </video>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            
+            <td><video height="400" controls>
+                <source src="fox.mp4" type="video/mp4">
+                <source src="fox.mp4" type="video/webm">
+                <source src="fox.mp4" type="video/ogg">    
+                </video>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td><video height="400" controls>
+                <source src="mon.mp4" type="video/mp4">
+                <source src="mon.mp4" type="video/webm">
+                <source src="mon.mp4" type="video/ogg">    
+                </video>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td><video height="400" controls>
+                <source src="mulbum.mp4" type="video/mp4">
+                <source src="mulbum.mp4" type="video/webm">
+                <source src="mulbum.mp4" type="video/ogg">    
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td><b style="font-size: 16px;">타마린 원숭이</b><br><br> 8월에 태어난 타마린 2마리이다.<br>본래 부모가 교대로 업고 다니는데, 부모가 키우던 중 아이들을 버려서, 인공포육을 진행했다.</td>
+            <td></td>
+            <td><b style="font-size: 16px;">사막여우</b><br><br> 사막여우들이다.<br> 보통 저녁에 더 활동적이다.<br>강아지처럼 꼬리를 흔들면서 <br>사람을 반기는 특징이 있다. </td>        
+            <td></td>
+            <td><b style="font-size: 16px;">다람쥐 원숭이</b><br><br> 다람쥐원숭이의 식사시간이다.<br> 보통 바나나,당근 등 <br>다양한 채소와 야채류를 먹는다.<br>특히 빵을 좋아한다.</td>        
+            <td></td>
+            <td><b style="font-size: 16px;">점박이 물범</b><br><br> 점박이물범의 식사시간이다.<br> 보통 식사마다 동태 5마리씩 먹는다. <br>약을 급여할땐,<br>동태 입에 넣어 던져준다.</td>        
+        </tr>
+      </table>
+      <br><br>
+    </div>
+
+    
+    <div class="clear">
+    </div>
+
+<!--푸터-->
+    <div id="footer">
+        <br><br>
+        <!--구분선-->
+        <hr width="100%" color="#EB9500" noshade/><br>
+        <p style="font-size: 12px;">동물원 긴급연락망 안내: 양호실: 042-####-#### 미아보호소: 042-###-#### 물품보관소 :042-###-#### ※ 아이를 잃어버리신 경우, 가까운 직원에게 알려주시기 바랍니다.</p><br>
+        <p>대전 O!WORLD : 35073 대전광역시 중구 사정공원로 70 (사정동) 대전오월드(305-82-12294) TEL 042-580-4820 FAX 042-580-4711</p>
+        <p>오월드 인스타그램 : https://www.instagram.com/daejeon_o_world/</p>
+        <p>오월드 페이스북 : https://www.facebook.com/daejeonoworld/</p>
+        <p>오월드 유튜브 : https://www.youtube.com/watch?v=wQV0qaPdaPs</p>
+        <p>오월드 관련 방송 : 유튜브 "펫트라슈" " 대전오월드" "애니멀클립" 등..  </p>
+    </div>
+
+    <div class="clear">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: solid opx black;
+            border-collapse: collapse;
+/* boeder값이 좌우로 4번 즉 4px가 더 들어가기 때문에, body의 width가 960 + 4 = 964가 되어야함 */
+        }
+        body {
+            width: 1205px; /*양옆 길이 설정*/
+            margin: 0 auto; /* margin : 상하px / 좌우px*/
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 150%;
+            font-weight: 400;
+            color: #4F3200;
+        }
+        .clear {
+            clear : both;
+        }
+/*구획 하는데에 이용하는 태그, folat같은 것들 이제 그만쓰라고 멈추는 일을 한다.*/        
+        #section {
+            float: right;  
+/* folat 속성 : 기존에 그냥 이용하면, 한 블럭을 다 쓰는 태그들을, CSS에서 미리 구간을 정해둠으로써 (left.right에서 일정 width값만 이용해라!), 여러 블럭태그들이 한 블럭을 나눠서 사용하도록 만드는 태그*/
+            width: 1200px;
+        }
+        #gong {
+            float: left;
+            width: 600px;
+            height: 300px;
+            background-color: #FFF7D1;
+            border-radius: 16px;
+            padding: 10px 10px;
+            margin-right: 20px;
+            margin-left: 52px;
+            vertical-align:middle;
+           
+        }
+        #ti { 
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: #FFF7D1;
+            border-radius: 16px;
+            padding: 10px 10px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        #sosik {
+            float:left;
+            width: 200px;
+            height: 300px;
+            background-color: #FFF7D1;
+            border-radius: 16px;
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+        #footer {
+            font-size: 10px;
+            color: gray;
+            line-height: 110%;
+            text-align: center;
+        }
+
+        table, tr, td, th {
+        background-color: #FFFFFF;
+        border : solid 0px black;
+                border-style: none;
+                border-collapse: collapse;
+                padding: 0 auto;
+                font-family: "고딕";
+                font-weight: 300;
+                font-style: 14px;
+        }
+
+        a:link, a:visited {
+    
+    color:  #4F3200;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    color: #EB9500;
+    }
+
+    </style>
+    <title>대전 O! WORLD</title>
+</head>
+
+
+<body>
+<!--헤더-->
+<div id="header" style="text-align: center; line-height: 10px;">
+    <a style="background: none;" href="index.html"><img src="oh-1.png" height="110"></a><br>
+    <b style="color: #EA77CA; font-size: 12px;">환상의 대전 O! WOLRD</b>
+     <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+  </div>
+
+<!--네비게이션-->
+  <div id="navigation" div id="navigation" style="text-align: center; font-weight: bold;">
+   
+              
+             <a href="map.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 정보안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             
+             <a href="animal.html" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물사 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="weather.html" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 날씨 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="money.html" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;운임요금 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="faq.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b></th>
+             <br><br><br>
+
+  </div>
+
+    <div class="clear">
+    </div>
+
+<!--내용부분-->
+    <div id="section">
+        <img src="banner.png" height="500" width="1200">
+
+
+<br><br><br>
+
+<br>
+</div>
+
+    <div id="clear">
+    </div>
+
+<div id="gong">
+    <p style="font-size: 18px; font-weight: bold;">오월드 공지사항 안내</p>
+
+    <b style="font-size: 16px;">동물 건강검진 안내 (23.09.15)</b><br><br>
+        <small>금주 어린이 동물원의 사막여우 방사장에서, 무단으로 투기한 채소류가 발견되어,<br>사막여우 전 개체가 건강검진을 진행합니다.
+        <br>개별적으로 가져오신 채소 및 음식류를 방사장에 넣는 행위는 엄격히 금지되어 있습니다.<br>이점 유의해주시기 바랍니다.
+        <br>사막여우 재 방사 일정에 대해서는 추후, 공지사항을 통해 전달해드릴 예정입니다.
+        <br>동물들의 안전을 위해 더 노력하겠습니다. 감사합니다.</small>
+        <br>
+        <br>
+        <a href="animal.html" style="color: #4F3200; font-weight: 16px; font-weight: bold;">☞ <u>더 많은 공지사항 확인하기</u></a>
+
+</div>
+
+<div id="ti">
+    <br>
+    <p style="font-size: 18px; font-weight: bold;">"티켓 안내"</p>
+    <br>
+    <a href="money.html"><img src="ticket.png" height="70px"></a>
+    <br><br>
+    <p style="font-size: 12px;">티켓을 클릭하고<br>자세한 티켓 발권정보를 알아보세요!</p>
+</div>
+
+<div id="sosik">
+    <br>
+    <p style="font-size: 18px; font-weight: bold;">"오월드 계절 소식지"</p>
+    <br>
+    <a href="weather.html"><img src="maple.png" height="90px"></a>
+    <br>
+    <p style="font-size: 12px;">단풍잎을 클릭하고<br>오월드의 가을 이야기를 들어보세요!</p>
+</div>
+
+<div class="clear">
+    </div>
+
+<!--푸터-->
+<div id="footer">
+    <br><br>
+     <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+     <p style="font-size: 12px;">동물원 긴급연락망 안내: 양호실: 042-####-#### 미아보호소: 042-###-#### 물품보관소 :042-###-#### ※ 아이를 잃어버리신 경우, 가까운 직원에게 알려주시기 바랍니다.</p><br>
+     <p>대전 O!WORLD : 35073 대전광역시 중구 사정공원로 70 (사정동) 대전오월드(305-82-12294) TEL 042-580-4820 FAX 042-580-4711</p>
+     <p>오월드 인스타그램 : https://www.instagram.com/daejeon_o_world/</p>
+     <p>오월드 페이스북 : https://www.facebook.com/daejeonoworld/</p>
+     <p>오월드 유튜브 : https://www.youtube.com/watch?v=wQV0qaPdaPs</p>
+     <p>오월드 관련 방송 : 유튜브 "펫트라슈" " 대전오월드" "애니멀클립" 등..  </p>
+    
+
+</div>
+
+<div class="clear"> 
+    </div>
+
+</body>
+</html>

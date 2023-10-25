@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: solid 0px black; 
+/* boeder값이 좌우로 4번 즉 4px가 더 들어가기 때문에, body의 width가 960 + 4 = 964가 되어야함 */
+        }
+        body {
+            width: 1205px; /*양옆 길이 설정*/
+            margin: 0 auto; /* margin : 상하px / 좌우px*/
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 150%;
+            font-weight: 400;
+            color: #4F3200;
+        }
+        .clear {
+            clear : both;
+        }
+/*구획 하는데에 이용하는 태그, folat같은 것들 이제 그만쓰라고 멈추는 일을 한다.*/        
+#aside {
+            border: dotted 2px #EB9500;
+            float: left;
+            width: 180px;
+            line-height: 1px;
+        }
+        #section {
+            float: right;  
+/* folat 속성 : 기존에 그냥 이용하면, 한 블럭을 다 쓰는 태그들을, CSS에서 미리 구간을 정해둠으로써 (left.right에서 일정 width값만 이용해라!), 여러 블럭태그들이 한 블럭을 나눠서 사용하도록 만드는 태그*/
+            width: 1020px;
+        }
+
+        table{
+            background-color: #FFFFFF;
+            border : solid 0px #5AC6F4;
+            border-style: none;
+            border-collapse: collapse;
+            padding: 0 auto;
+            font-family: '고딕';
+            font-weight: 300;
+            font-style: 14px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        tr {
+            border: 1px solid #5AC6F4;
+            margin: 0px auto;}
+        th,td {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid #5AC6F4;
+            vertical-align: middle;
+        }
+
+
+
+        a:link, a:visited {
+    
+    color:  #4F3200;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    color: #EB9500;
+    }
+
+        li {
+            list-style-type: disc;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .red { 
+        color:red; font-weight: bold;
+       }
+
+       #footer {
+            font-size: 10px;
+            color: gray;
+            line-height: 110%;
+            text-align: center;
+        }
+
+    </style>
+    <title>대전 O! WORLD</title>
+</head>
+
+
+<body>
+<!--헤더-->
+  <div id="header" style="text-align: center; line-height: 10px;">
+    <a style="background: none;" href="index.html"><img src="oh-1.png" height="110"></a><br>
+    <b style="color: #EA77CA; font-size: 12px;">환상의 대전 O! WOLRD</b>
+     <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+  </div>
+
+<!--네비게이션-->
+  <div id="navigation" style="text-align: center; font-weight: bold;">
+   
+              
+             <a href="map.html" style="color: #401200;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 정보안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             
+             <a href="animal.html" style="color: #401200;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물사 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="weather.html" style="color: #401200;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동물원 날씨 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="money.html" style="color: #401200;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;운임요금 안내 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            
+             <a href="faq.html" style="color: #401200;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b></th>
+             <br><br><br>
+
+  </div>
+
+<!--사이드-->
+  <div id="aside" style="border-radius: 16px; text-align: center;">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <p><b style="color: #EB9500; font-size: 18px;"><span style="border-radius: 5em; padding: 1em; background: #FCE8CC">운임 요금 안내</span></b></p>
+        <a href="#tag1" style="font-size: 14px; font-weight: bold;"> <p> 🦁 이용권 소개</p></a><br>
+        <a href="#tag2" style="font-size: 14px; font-weight: bold;"> <p> 🦁 이용권 가격 안내 </p></a><br>
+        <a href="#tag3" style="font-size: 14px; font-weight: bold;"> <p> 🦁 이용시 유의사항 </p></a><br><br><br>
+  </div>
+
+<!--내용부분-->
+  <div id="section">
+    <!--운임요금안내-->
+    <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">운임 요금 안내</p>
+
+      <p style=" font-weight: 400; font-size: 12px; color: gray; text-align: center;">오월드는 언제나 최고의 서비스를 합리적인 가격으로 만나보실 수 있도록 노력하고 있습니다.</p>
+
+    <!--이용권 종류-->
+      <a id="tag1"></a>
+
+      <p style="text-align: center; font-size: 18px; font-weight: bold; color: #401E00">이용권 소개</p>
+
+      <table>
+        <tr style="background-color: #DDF2F2;">
+            <th></th> <th>기본시설<br>입장</th> <th>아프리카<br>사파리</th><th>놀이시설<br>자유이용</th> <th>나이트<br>유니버스</th> <th>비고</th>
+        </tr>
+        <tr>
+            <th style="background-color: #DDF2F2;">일반이용권</th> <td>O</td> <td>X</td> <td>X</td> <td>O</td> <td style="font-size: x-small;">나이트 유니버스<br>입장권만<br> 별도 구매 가능</td>
+        </tr>
+        <tr>
+            <th style="background-color: #DDF2F2;">자유이용권</th> <td>O</td> <td>O</td> <td>O</td> <td>O</td> 
+        </tr>
+        <tr>
+            <th style="background-color: #DDF2F2;">패키지권<br>(단체)</th> <td>O</td> <td>O</td> <td>3종</td> <td>O</td> <td style="font-size: x-small;">단체 손님 전용 <br><small>(개인판매불가)</small></td>
+        </tr>
+        </table>
+
+        <a id="tag2"></a> <br><br>
+
+    <!--이용권 가격안내-->
+    
+    <p style="text-align: center; font-size: 18px; font-weight: bold; color: #401E00">이용권 가격 안내</p>
+    
+     <table>
+       <!--1-->
+
+       <!--2-->
+        <tr style="background-color: #DDF2F2;">
+            <th>구분</th> <th colspan="2">권종</th> <th>성인</th> <th>청소년</th> <th>어린이/경로</th>
+        </tr>
+       <!--3-->
+        <tr>
+            <th rowspan="4" style="background-color: #DDF2F2;">개인</th> <th rowspan="2">입장권</th> <td>기본</td> <td>17,000</td> <td>13,000</td> <td>10,000</td>
+        </tr>
+       <!--4-->
+        <tr>
+             <td>대전 시민</td style="background-color: #DDF2F2;"> <td>13,500</td> <td>10,500</td> <td>8,000</td> 
+        </tr>
+       <!--5-->
+        <tr>
+            <th rowspan="2">자유이용권</th> <td>기본</td> <td>34,000</td> <td>28,000</td> <td>25,000</td>
+        </tr>
+       <!--6-->
+        <tr>
+            <td>대전 시민</td> <td>27,000</td> <td>22,500</td> <td>20,000</td>
+        </tr>
+       <!--7-->  
+        <tr>
+            <th rowspan="3" style="background-color: #DDF2F2;">단체<br><small style="color:gray">(20명 이상)</small></th> <th colspan="2">입장권</th> <td>11,000</td> <td>8,500</td> <td>6,500</td>
+        </tr>
+       <!--8-->  
+        <tr>
+            <th colspan="2">패키지권 <br><small style="color: gray;">(입장+사파리+놀이시설 3종)</small></th> <td>19,000</td> <td>15,000</td> <td>13,000</td>
+        </tr>
+       <!--9-->  
+        <tr>
+            <th colspan="2">자유이용권</th> <td>22,000</td> <td>18,000</td> <td>16,000</td>
+        </tr>
+     </table>
+    
+     <p style="text-align: center;"><small><i>※ 자유이용권 구매 시, 나이트 유니버스까지 이용 가능</i></small></p>
+
+     <p style="text-align: center;"><small><i>※ 운임나이적용기준 : <b>유아</b>: 만 36개월미만 &nbsp; <b>어린이</b>: 만36개월~만12세, &nbsp; <b>청소년</b>: 만13세~만18세 &nbsp; 
+        <b>성인</b>: 만19세 ~만64세 &nbsp; <b>경로</b>: 만64세~</i></small></p><br>
+
+     <!--구분선-->
+     <hr width="70%" color="#DDF2F2" noshade/><br>
+
+    <!--이용시 유의사항-->
+     <a id="tag3"></a>
+
+     <p style="text-align: center; font-size: 24px; font-weight: bold; color: #401E00">이용시 유의사항 안내</p>
+     <p style="font-size: 12px; color: gray; text-align: center;">이것만은 꼭! 지켜주세요</p>
+     <ul>
+        
+            <li><b>아프리카 사파리 유의사항</b> <br>
+            <small>탑승시 직원의 안내에 협조해주시기 바랍니다.<br>끼어들기, 새치기, 자리 맡기 등의 행위는 불가하며, 일행 전원이 함께 대기해야 탑승이 가능합니다.</small></li><br>
+            <li><b>반입금지물품 안내</b> <br>
+            <small>안전한 관람을 위하여 다른 관람객에게 피해를 줄 수있는 물품등은 반입을 금지하고 있습니다.<br> <span class="red">반입금지 : 킥보드, 자전거, 공, 인라인스케이트, 전동휠, 유아전동차, 드론, 텐트, 그늘막, 애완동물</span> (맹인안내견 제외 등..)<br> 오월드 원내에는 반입금지물품 등의 보관을 위한 장소가 별도로 마련되어 있지 않습니다.</small>
+            
+    
+     </ul>
+ </div>
+
+ <div class="clear"> <!--위에서 float속성을 사용했기 때문에 꼭 필요함.-->
+ </div>
+
+<!--푸터-->
+    <div id="footer">
+    <br><br>
+    <!--구분선-->
+     <hr width="100%" color="#EB9500" noshade/><br>
+     <p style="font-size: 12px;">동물원 긴급연락망 안내: 양호실: 042-####-#### 미아보호소: 042-###-#### 물품보관소 :042-###-#### ※ 아이를 잃어버리신 경우, 가까운 직원에게 알려주시기 바랍니다.</p><br>
+     <p>대전 O!WORLD : 35073 대전광역시 중구 사정공원로 70 (사정동) 대전오월드(305-82-12294) TEL 042-580-4820 FAX 042-580-4711</p>
+     <p>오월드 인스타그램 : https://www.instagram.com/daejeon_o_world/</p>
+     <p>오월드 페이스북 : https://www.facebook.com/daejeonoworld/</p>
+     <p>오월드 유튜브 : https://www.youtube.com/watch?v=wQV0qaPdaPs</p>
+     <p>오월드 관련 방송 : 유튜브 "펫트라슈" " 대전오월드" "애니멀클립" 등..  </p>
+    </div>
+
+</body>
+</html>
