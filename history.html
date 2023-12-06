@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKA WEB</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+    @font-face {
+      font-family: "NeoL";
+      src: url("font/AppleSDGothicNeoL.ttf") format("truetype");
+      font-weight: normal;
+        }
+
+    @font-face {
+      font-family: "NeoUL";
+      src: url("font/AppleSDGothicNeoUL.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        
+    @font-face {
+      font-family: "NeoB";
+      src: url("font/AppleSDGothicNeoB.ttf") format("truetype");
+      font-weight: normal;
+        }       
+
+    @font-face {
+      font-family: "NeoEB";
+      src: url("font/AppleSDGothicNeoEB.ttf") format("truetype");
+      font-weight: normal;
+        }    
+        
+    @font-face {
+      font-family: "NeoSB";
+      src: url("font/AppleSDGothicNeoSB.ttf") format("truetype");
+      font-weight: normal;
+        }     
+
+        .clear {
+            clear : both;
+        }
+        body {
+            text-align: center;
+            font-family:"NeoL";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 150%;
+            width: 1205px;
+            margin: 0 auto;
+            background-image: url(img/bg.png);
+        }
+        header {
+            width: 1205px;
+            height: 150px;
+            padding-top: 40px;
+            text-align: center;
+            background-image: url(img/logoback.png);
+            font-family: "NeoSB";
+        }
+        header li {
+            display: inline-block;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+        nav {
+            width: 1205px;
+            height: 50px;
+            background-color: white;
+            font-family: "NeoSB";
+        }
+        nav ul {
+            background-color: #F0E9F0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        
+        section {
+            float: none;
+            background-color: white;
+        }
+       /* aside {
+            float : left;
+            margin-top: 10px;
+            margin-left: 20px;
+        } */
+        footer {
+            width: 1205px;
+            height: 200px;
+            background-image: url(img/footer_banner2.png);
+        }
+
+        header a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+        } 
+
+        header a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        nav a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        } 
+
+        nav a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        table {
+            border: solid 0px black;
+            border-style: none;
+            border-collapse: collapse;
+            margin: 0 30px;
+            line-height: 170%;
+        }
+        tr {
+            border: solid 0px black;
+            height: 10px;
+        }
+        td {
+            border: solid 0px black;
+            height: 400px;
+            width: 500px;
+        }
+        /* 여기서 부터는 ID, class */
+        .topmini {
+            font-size: 10px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .img1 {
+            float: left;
+            padding : 20px 20px;
+        }
+        .img2 {
+            float: left;
+            padding : 20px 0;
+        }
+        .img3 {
+            float: left;
+            padding : 20px 20px 20px 0;
+
+        }
+        .outer1 { 
+            text-align: center;
+        }
+        .outer2 {
+            width: 800px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer3 {
+            width: 540px;
+            height: 280px;
+            display: inline-block;
+        }
+        .read {
+            padding: 20px 10px 0 10px;
+            display: inline-block;
+        }
+        .foot_left {
+            float:left;
+            margin: 30px 500px 0 100px;
+            text-align: left;
+        }
+        .foot_right {
+            float:right;
+            margin : 40px 100px 30px 0;
+            text-align: left;
+        }
+        .bottommini {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .name {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            border-left: solid 5px red;
+            padding-left: 10px;
+        }
+        #fastival {
+            text-align: left;
+            padding-left: 100px;
+        }
+        .fastouter {
+            display: inline-block;
+        }
+        .b_1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .tour {
+            border: solid 1px black;
+            border-collapse: collapse;
+            margin: 0 30px;
+        }
+        .tour tr {
+            border: solid 1px black;
+            height: 10px;
+        }
+        .tour td {
+            border: solid 1px black;
+            height: 400px;
+            width: 500px;
+        }
+        .titl {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .name3 {
+            text-align: left;
+            padding: 0 15px;
+        }
+        .name4 {
+            text-align: left;
+            padding: 0 15px;
+        }
+        .name4 {
+            text-align: center;
+        }
+        .pic {
+            height: 300px;
+            width: 500px;
+        }
+        .now {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom:solid  red 5px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .now_font {
+            color: #CC0000;
+            font-size: 16px;
+        }
+        .bottombig {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: #262626;
+        }
+        .moving {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving :hover {
+        transform: scale(1.07);
+        }
+
+        .topmini2 {
+            font-size: 10px;
+            font-family: "NeoSB";
+            color: #7a7a7a;
+        }
+        </style>
+
+</head>
+
+<body>
+<!--상단 네비게이션 영역-->
+<header>
+    <div class="moving"><a href="index.html"><img src="img/logo.png" height="50px" width="150px"></a></div>
+    <p class=topmini2>당신의 특별한 오사카 여행을 보다 편하게 누릴 수 있도록.</p>
+    <br>
+
+       <ul>
+           <li class="now"><a href="history.html"><p class="now_font">오사카 지역 역사</p></a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="space.html">관광지 소개</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="culture.html">오사카 즐길거리</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="tour.html">오사카 여행 정보</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="talk.html">간단한 일본어 회화</a></li>
+       </ul>
+   </header>
+   <nav>
+       <ul>
+           <li><a href="#tag1">1장. 교역의 장이 시작되다</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag2">2장. 막부 시기의 오사카</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag3">3장. 유신 이후의 근대적 변화</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag4">4장. 2차 세계대전 그 이후</a></li>
+   </nav>
+
+   <div class="clear"></div>
+<!--내용 영역-->
+    <section class="outer1">
+    <br><br><br>
+    <h2>오사카 지역 역사</h2>
+    <br>
+    <p class="name4">깊은 역사를 지닌 오사카.  그 역사를 간략하게 이야기 해드립니다.</p>
+
+        <br><br><br>
+        <hr width="100%" color="#EEEEEE" noshade/>
+
+    </section>  
+
+    <section class="outer1">
+        <div class="fastouter">
+            <a id="tag1"></a>
+            <table>
+                <tr>
+                    <td class="name4"><img src="img/osaka1.jpg" class="pic"></td>
+                    <td class="name3"><b class="titl">1장 :  교역의 장이 시작되다.</b><br><br>
+                        5세기경, 일본의 경제-정치의 중심지로 발돋움한 오사카는 초창기에 작은 항구였습니다.<br>
+                       현재 오사카시 주오구 부근으로 추정하는 “나니와쓰 항구가 오사카의 시작이였습니다.<br>
+                       나니와쓰 항구가 개항하면서,  최첨단 기술과 불교가 일본으로 건너올 수 있게 되었습니다.<br>
+                       6세기 쇼토쿠 태자가 시텐노지를 건립하였고 7세기 고토쿠 천황은 오사카로 천도했습니다.<br>
+                       그리고 이후에 교토-나라-교토-가마쿠라-에도로 수도가 옮겨지게 됩니다.<br>
+                       이러한 수도를 옮기는 과정 속에서도 오사카는 제2의 도시 역할을 수행하며 발전해왔고, 중요한 외교창구의 역할을 하였습니다.<br>
+                       일본의 수도가 교토로 이전된 794년 이후의 시기를 헤이안 시대라고 불렀습니다.<br>
+                       이때당시 융성한 불교의 발전으로 인해 수많은 사원이 교토, 오사카 등지에 건립되었고 불교문화가 꽃을 피웠습니다.<br>
+                       </td> 
+                </tr>
+            </table>
+            <a id="tag2"></a>
+            <table>
+                <tr>
+                    <td class="name3"><b class="titl">2장 :  막부 시기의 오사카</b><br><br>
+                        1185년 미나모토노 요리토모가 가마쿠라 막부를 수립하고 정권을 쥐게되는데,
+                        이 이후 일본열도는 전란이 자주 발생하는 전국시대로 접어들게됩니다.<br>
+                        이런 막부시기의 오사카는 전란으로 인해 황폐화 되었습니다.<br>
+                         16세기 경에 등장한 오다 노부나가는 이런 상황에서도 오사카의 중요성을 잘 알고있었습니다.<br>
+                         그는 오사카를 점령하면 일본과 일본 주변국을 정복할 수 있을 것이라는 생각을 가지고 <br>
+                         10여년에 걸쳐 오사카 지역의 이시야마 혼간지를 공격했습니다.<br>
+                        그가 오사카를 점령한 이후 후계자인 도요토미 히데요시는 오사카를 거점으로 삼았습니다.<br>
+                        유명한 오사카 성도 1583년에 도요토미 히데요시가 지은 성입니다.<br>
+                        하지만 도요토미 히데요시의 사후 세키가하라 전투에서 동군 즉, 도쿠가와 이에야스가 승리하면서 도요토미씨는 멸족 당하게 되고,
+                        주요 거점도 에도(현재의 도쿄)로 옮겨갔습니다.<br>
+                        이때 수립된 막부가 마지막 막부인 에도 막부이며, 일본은 쇄국의 길로 들어서게 됩니다.
+                        </td>
+                    <td class="name4"><img src="img/osaka2.jpg" class="pic"></td>
+                </tr>
+            </table>
+            <a id="tag3"></a>
+            <table>
+                <tr>
+                    <td class="name4"><img src="img/osaka3.jpg" class="pic"></td>
+                    <td class="name3"><b class="titl">3장 :  유신 이후의 근대적 변화 </b><br><br>
+                        1868년 막부의 권력을 천황이 회복하고(왕정복고) 머리를 자르고 근대적인 개혁을 진행하는 메이지 유신이 단행되었습니다.<br>
+                        도쿄로 천도한 이후 도쿄는 경제도시로 크게 성장해갔지만 오사카는 정체되어 있었습니다.<br>
+                        그래서 이때 오사카는 공업도시로의 전환을 시도하게됩니다.<br>
+                        오사카의 공업지대는 매연을 뿜어대었고, 19세기에‘스모그의 도시’라는 악명이 붙게 됩니다.<br>
+                        공업지대의 매연이 마치 멘체스터와 같아, ‘동양의 멘체스터’ 불명예스러운 별명도 가지게 됩니다.
+                        </td>
+                </tr>
+            </table>
+            <a id="tag4"></a>
+            <table>
+                <tr>
+                    <td class="name3"><b class="titl"> 4장 :  2차 세계대전 그 이후 </b><br><br>
+                        2차 세계대전동안 오사카 도시 전체의 약 1/3이 폭격에 의해 괴멸당했습니다.<br>
+                        수많은 상업지구, 공업지구가 폭격을 당했습니다.<br>
+                        결국 천황이 항복선언을 하며, 2차 세계대전이 종식되었고 복구 작업이 시작되었습니다.<br>
+                        복구 작업이 진행된 이후, 여러 나라들의 다양한 기업과 사업가들이 오사카에 모여 들었고,<br>
+                        오사카는 인근의 역사도시 교토-나라와 연계한 관광 그리고 다양한 볼거리의 장점을<br>활용해서,관광도시로 발돋움 했습니다.<br>
+                        그리고 오사카는 지금도 서일본의 중심지로서의 기능을 하고있습니다. 
+                        </td> 
+
+                    <td class="name4"><img src="img/osaka4.jpg" class="pic"></td>
+                </tr>
+            </table>
+
+            <br><br><br><br>
+        </div>
+    </section>
+
+<!-- 푸터영역 -->
+<footer>
+    <hr width="100%" color="#cccccc" noshade/><br>
+    
+    <div class="foot_left">
+    <img src="img/foot_logo.png" width="100px">
+    </div>
+
+    <div class="foot_right">
+        <p class="bottombig"> O!SAKA WEB SITE copyright &copy; 22261005김기현 <br>
+        <p class="bottombig"> 직무수행능력평가2 ALL RIGHTS RESERVED.<br>
+            2023.12.06 Final Update<br>
+            
+        </p>
+        </div>
+        
+</footer>
+
+
+
+</body>
