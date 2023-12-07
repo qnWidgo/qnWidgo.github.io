@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKA WEB</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+    @font-face {
+      font-family: "NeoL";
+      src: url("font/AppleSDGothicNeoL.ttf") format("truetype");
+      font-weight: normal;
+        }
+
+    @font-face {
+      font-family: "NeoUL";
+      src: url("font/AppleSDGothicNeoUL.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        
+    @font-face {
+      font-family: "NeoB";
+      src: url("font/AppleSDGothicNeoB.ttf") format("truetype");
+      font-weight: normal;
+        }       
+
+    @font-face {
+      font-family: "NeoEB";
+      src: url("font/AppleSDGothicNeoEB.ttf") format("truetype");
+      font-weight: normal;
+        }   
+        
+    @font-face {
+      font-family: "NeoSB";
+      src: url("font/AppleSDGothicNeoSB.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        .clear {
+            clear : both;
+        }
+        body {
+            text-align: center;
+            font-family:"NeoL";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 150%;
+            width: 1205px;
+            margin: 0 auto;
+            background-image: url(img/bg.png);
+        }
+        header {
+            width: 1205px;
+            height: 150px;
+            padding-top: 40px;
+            text-align: center;
+            background-image: url(img/logoback.png);
+            font-family: "NeoSB";
+        }
+        header li {
+            display: inline-block;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+        nav {
+            width: 1205px;
+            height: 50px;
+            background-color: white;
+            font-family: "NeoSB";
+        }
+        nav ul {
+            background-color: #F0E9F0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        
+        section {
+            float: none;
+            background-color: white;
+        }
+       /* aside {
+            float : left;
+            margin-top: 10px;
+            margin-left: 20px;
+        } */
+        footer {
+            width: 1205px;
+            height: 200px;
+            background-image: url(img/footer_banner2.png);
+        }
+
+        header a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+        } 
+
+        header a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        nav a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        } 
+
+        nav a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        table, tr, td, th {
+        border : solid 0px #808080;
+        border-style: none;
+        border-collapse: collapse;
+        padding: 20px 20px;
+        margin: 0 10px;
+        line-height: 130%;
+        }
+
+        /* 여기서 부터는 ID, class */
+        .topmini {
+            font-size: 10px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .img1 {
+            float: left;
+            padding : 20px 20px;
+        }
+        .img2 {
+            float: left;
+            padding : 20px 0;
+        }
+        .img3 {
+            float: left;
+            padding : 20px 20px 20px 0;
+
+        }
+        .outer1 { 
+            text-align: center;
+        }
+        .outer2 {
+            width: 800px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer3 {
+            width: 540px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer4 { 
+            text-align: left;
+        }
+        .read {
+            padding: 20px 10px 0 10px;
+            display: inline-block;
+        }
+        .foot_left {
+            float:left;
+            margin: 30px 500px 0 100px;
+            text-align: left;
+        }
+        .foot_right {
+            float:right;
+            margin : 40px 100px 30px 0;
+            text-align: left;
+        }
+        .bottommini {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .name {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            border-left: solid 5px red;
+            padding-left: 10px;
+        }
+        #fastival {
+            text-align: left;
+            padding-left: 100px;
+        }
+        .fastouter {
+            display: inline-block;
+        }
+        .b_1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #h_menu li {
+            display: inline;
+        }
+
+        .name2 {
+            text-align: left;
+            padding-left: 60px;
+            padding-top: 80px;
+        }
+    
+        .name3 {
+            text-align: left;
+            padding-left: 150px;
+            padding-top: 30px;
+            line-height: 200%;
+        }
+
+        .tour {
+            border: solid 1px #D98690;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 30px 10px 30px 10px;
+            
+        }
+        .tour tr {
+            border: solid 1px #D98690;
+            height: 10px;
+        }
+        .tour td {
+            border: solid 1px #D98690;
+            height: 10px;
+        }
+        .tour th {
+            border: solid 1px #D98690;
+            height: 10px;
+        }
+        .plus_infor {
+            font-size: 12px;
+            font-weight: 300;
+            color: gray;
+        }
+        .plus_infor_red {
+            font-size: 12px;
+            font-weight: 500;
+            color: red;
+            text-decoration: underline;
+        }
+        .back {
+            background-color: #F7B8BB;
+        }
+        .back_2 {
+            background-color: #FFEAEA;
+        }
+        .name4 {
+            text-align: center;
+        }
+        .now {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom:solid  red 5px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .now_font {
+            color: #CC0000;
+            font-size: 16px;
+        }
+        .bottombig {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: #262626;
+        }
+        .point {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .moving {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving :hover {
+        transform: scale(1.07);
+        }
+
+        .topmini2 {
+            font-size: 10px;
+            font-family: "NeoSB";
+            color: #7a7a7a;
+        }
+        </style>
+        
+</head>
+
+<body>
+<!--상단 네비게이션 영역-->
+<header>
+    <div class="moving"><a href="index.html"><img src="img/logo.png" height="50px" width="150px"></a></div>
+    <p class=topmini2>당신의 특별한 오사카 여행을 보다 편하게 누릴 수 있도록.</p>
+    <br>
+
+       <ul>
+           <li><a href="history.html">오사카 지역 역사</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="space.html">관광지 소개</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="culture.html">오사카 즐길거리</a></li> &nbsp;&nbsp;&nbsp;
+           <li class="now"><a href="tour.html"><p class="now_font">오사카 여행 정보</p></a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="talk.html">간단한 일본어 회화</a></li>
+       </ul>
+   </header>
+   <nav>
+       <ul>
+           <li><a href="#tag1">오사카 기후</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag2">엔화 환율 </a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag3">교통패스</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag4">여행 준비 주의할 점</a></li> &nbsp;&nbsp;&nbsp;
+       </ul>
+       <a id="tag1"></a>
+   </nav>
+
+<!--내용 영역-->
+<body>
+    <section class="outer1">
+        <br><br><br>
+        <h2>오사카 여행 정보</h2>
+        <br>
+        <p class="name4">다양한 패스부터 주의할 점까지 오사카 여행 정보를 한눈에 확인하세요.</p>
+    
+            <br><br><br>
+            <hr width="100%" color="#EEEEEE" noshade/>
+          
+        </section>  
+
+    <section class="name2">
+    <h3 class = "name">오사카 기후</h3> <br>
+    </section>
+
+    <section class="outer1">
+        <div class="fastouter">
+        <table>
+            <tr><td colspan="4"><img src="img/sunny.png" height="400px" style="border: solid 1px #D98690;"></td></tr>
+            <tr><td><b class="point">봄</b><p>(3~5월)</p> 온화한 봄 날씨, 오사카 여행의 최적기</td> <td><b class="point">여름</b><p>(6~8월)</p> 찌는듯한 더위와 장마, 여행이 힘든 시기</td></tr>
+            <tr><td><b class="point">가을</b><p>(9~10월)</p> 시원하면서 온난한 여행하기 좋은 계절</td><td><b class="point">겨울</b><p>(11~2월)</p> 단풍과 함께 찬 바람이 부는 계절</td></tr>
+        </table>
+        </div>
+        <a id="tag2"></a>
+        <br><br><hr width="100%" color="#EEEEEE" noshade/>
+    </section>
+
+    <section class="name2">
+        <h3 class = "name">엔화 환율</h3> <br>
+    </section>
+
+    <section class="outer1">
+    <div class="fastouter">
+        <table>
+        <tr><td><img src="img/exchange.png" height="280px"></td>
+            <td style="text-align: left; line-height: 150%;"><b>엔화 환율 동향 (23.12.04)</b><br><br>
+            엔화 환율은 올 여름 900원대를 기점으로 낮아져, 10월 말 850원대로 내려가 15년만에 최저치를 기록했습니다!<br>
+            일본의 여러 상황이 맞물려 환전에 유리한 상황이오니 앱 혹은 환전센터를 활용해서 미리 여행을 준비해보세요!<br><br>
+            일본에서 구매하면 디젤, 꼼데가르송, 비비안 웨스트우드 등 다양한 브랜드의 제품에<br>
+            백화점 게스트 카드 할인 + 면세의 혜택을 적용하여 보다 저렴하게 구매할 수 있습니다.<br>
+            한국에서 가격을 비교해보고 출발하는 것 잊지 마세요!
+            </td>
+        </tr>
+        </table>
+    </div>
+    <a id="tag3"></a>
+    <br><br><hr width="100%" color="#EEEEEE" noshade/>
+    </section>
+
+    <section class="name2">
+        <h3 class = "name">교통 패스</h3> <br>
+    </section>
+
+    <section class="outer1">
+        <div class="fastouter">
+            <table class="tour">
+              <tr class="back">
+                <th >종류</th> <th>일별 분류</th> <th>지하철</th> <th>전철</th> <th>버스</th> <th>추가적 혜택</th> <th>가격</th>
+              </tr>
+
+              <tr>
+                <th rowspan="2" class="back">오사카 주유 패스</th> <td class="back_2">1일권</td> <td>오사카 지역내 사철 O</td> <td>전 버스 O</td> <td>모든 버스 노선 O</td><td rowspan="2">약 35개 관광지 <br>무료 입장</td> <th>2,800엔</th>
+              </tr>
+
+              <tr>
+                <td class="back_2">2일권</td> <td>오사카 지역내 사철 O <br><small style="color: gray;">(일부 노선 제외)</small></td> <td>오사카 지역<br>전 버스 O </td> <td>모든 버스 노선 O</td> <th>3,600엔</th>
+              </tr>
+
+              <tr>
+                <th rowspan="4" class="back">JR 웨스트<br>간사이 패스</th> <td class="back_2">1일권</td> <td rowspan="4">X</td> <td rowspan="4">간사이 전지역 <br>JR노선이용 가능</td> <td rowspan="4">X</td> <td rowspan="4">관광패스 제공<br><small style="color: gray;">(하단 참조)</small></td><th>2,800엔</th>
+              </tr>
+
+              <tr>
+                <td class="back_2">2일권</td> <th>4,800엔</th>
+              </tr>
+
+              <tr>
+                <td class="back_2">3일권</td> <th>5,800엔</th>
+              </tr>
+
+              <tr>
+                <td class="back_2">4일권</td> <th>7,000엔</th>
+              </tr>
+              <tr>
+                <th rowspan="2" class="back">간사이 쓰루 패스</th> <td class="back_2">2일권</td> <td rowspan="2">오사카,교토,고베<br>전 노선 O</td> <td rowspan="2">게이한/긴테츠<br>한큐/난카이 노선 O</td> <td rowspan="2">시영 버스 O</td> <td rowspan="2">약 350여개 매장,<br>어트렉션할인</td> <th>4,380엔</th>
+              </tr>
+
+              <tr>
+                <td class="back_2">3일권</td> <th>5,400엔</th> 
+              </tr>
+            </table>
+            <div style="text-align: left;">
+            <p class="plus_infor">※ <b>오사카 주유패스 1일권</b> : 오사카 메트로 라인 + 한큐 / 게이한 / 난카이 / 한신 / 킨테츠 노선 이용가능, <b class="plus_infor_red">JP라인 이용 불가</b> </p>
+            <p class="plus_infor">※ <b>오사카 주유패스 2일권</b> : 오사카 메트로 라인만 이용 가능, <b class="plus_infor_red">JR라인 이용 불가</b> </p>
+            <br>
+            <p class="plus_infor">※ <b>JR 웨스트 간사이 패스</b> : 교토 시영지하철, 교토 관광패스, 한큐 교토선 패스 제공
+            </div>
+        </div>
+        <a id="tag4"></a>
+        <br><br><br><hr width="100%" color="#EEEEEE" noshade/>
+    </section>
+
+    <section class="name2">
+        <h3 class = "name">여행 준비 주의할 점 </h3> <br>
+        </section>
+
+        <section class="outer4">
+            <div class="fastouter">
+            <ul class="name3">
+                <li>✔️ &nbsp; <b class="point">멀티어댑터 준비하기</b><br>일본은 한국과 다르게 110V를 이용합니다. 110V 멀티어댑터를 준비하세요.</li>
+                <br><br>
+                <li>✔️ &nbsp; <b class="point">비짓재팬웹 활용하기</b><br>출국하기 몇일 전 비짓재팬웹에 접속해서, 입국심사 및 세관신고를 미리 준비하세요! 빠르게 입국 절차를 진행할 수 있습니다.</li>
+                <br><br>
+                <li>✔️ &nbsp; <b class="point">동전지갑 구비하기</b><br>일본은 단위가 큰 돈도 동전으로 발행하는 나라입니다. 동전을 이용할 때 불편한 상황을 대비하여 동전지갑을 미리 구비하세요.</li>
+                <br><br>
+                <li>✔️ &nbsp; <b class="point">교통패스 알아보기</b><br>일본은 교통비가 비싸기로 유명한 나라입니다. 저렴한 교통패스가 다양하게 존재하니 여행계획을 세울때 내 이동경로에 맞는 교통패스를 미리 알아보세요!</li>
+            </ul>
+            <br><br><br>
+            </div>
+        </section>
+
+<!--초기화-->
+<div class="clear"></div>
+
+<!-- 푸터영역 -->
+<footer>
+    <hr width="100%" color="#cccccc" noshade/><br>
+    
+    <div class="foot_left">
+    <img src="img/foot_logo.png" width="100px">
+    </div>
+
+    <div class="foot_right">
+        <p class="bottombig"> O!SAKA WEB SITE copyright &copy; 22261005김기현 <br>
+        <p class="bottombig"> 직무수행능력평가2 ALL RIGHTS RESERVED.<br>
+            2023.12.06 Final Update<br>
+            
+        </p>
+        </div>
+        
+    </footer>
+</body>
+</html>

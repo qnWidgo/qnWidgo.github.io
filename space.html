@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKA WEB</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+    @font-face {
+      font-family: "NeoL";
+      src: url("font/AppleSDGothicNeoL.ttf") format("truetype");
+      font-weight: normal;
+        }
+
+    @font-face {
+      font-family: "NeoUL";
+      src: url("font/AppleSDGothicNeoUL.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        
+    @font-face {
+      font-family: "NeoB";
+      src: url("font/AppleSDGothicNeoB.ttf") format("truetype");
+      font-weight: normal;
+        }       
+
+    @font-face {
+      font-family: "NeoEB";
+      src: url("font/AppleSDGothicNeoEB.ttf") format("truetype");
+      font-weight: normal;
+        }    
+        
+    @font-face {
+      font-family: "NeoSB";
+      src: url("font/AppleSDGothicNeoSB.ttf") format("truetype");
+      font-weight: normal;
+        }     
+
+        .clear {
+            clear : both;
+        }
+        body {
+            text-align: center;
+            font-family:"NeoL";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 150%;
+            width: 1205px;
+            margin: 0 auto;
+            background-image: url(img/bg.png);
+        }
+        header {
+            width: 1205px;
+            height: 150px;
+            padding-top: 40px;
+            text-align: center;
+            background-image: url(img/logoback.png);
+            font-family: "NeoSB";
+        }
+
+        header li {
+            display: inline-block;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+        nav {
+            width: 1205px;
+            height: 50px;
+            background-color: white;
+            font-family: "NeoSB";
+        }
+        nav ul {
+            background-color: #F0E9F0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        
+        section {
+            float: none;
+            background-color: white;
+        }
+       /* aside {
+            float : left;
+            margin-top: 10px;
+            margin-left: 20px;
+        } */
+        footer {
+            width: 1205px;
+            height: 200px;
+            background-image: url(img/footer_banner2.png);
+        }
+
+        header a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+        } 
+
+        header a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        nav a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        } 
+
+        nav a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        table, tr, td, th {
+        border : solid 0px black;
+        border-style: none;
+        border-collapse: collapse;
+        padding: 20px 20px;
+        margin: 10px 10px;
+        line-height: 150%;
+        width: 1165px;
+        }
+        
+        details {
+        padding: 10px;
+        border: 1px solid #EEEEEE;
+        background-color: #D5DBD6;
+        border-radius: 0px;
+        transition: max-height 0.5s ease-in-out;
+        }
+        details[open] {
+        max-width: 1200px;
+        max-height: 800px;
+        }
+        summary {
+        text-align: left;
+        list-style-type: none;
+        cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            border-left: solid 0px red;
+            padding-left: 10px;
+            margin: 7px 0px;
+            font-family: "NEOL";
+        }
+        /* 여기서 부터는 ID, class */
+        .topmini {
+            font-size: 10px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .img1 {
+            float: left;
+            padding : 20px 20px;
+        }
+        .img2 {
+            float: left;
+            padding : 20px 0;
+        }
+        .img3 {
+            float: left;
+            padding : 20px 20px 20px 0;
+
+        }
+        .outer1 { 
+            text-align: center;
+        }
+        .outer2 {
+            width: 800px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer3 {
+            width: 540px;
+            height: 280px;
+            display: inline-block;
+        }
+        .read {
+            padding: 20px 10px 0 10px;
+            display: inline-block;
+        }
+        .foot_left {
+            float:left;
+            margin: 30px 500px 0 100px;
+            text-align: left;
+        }
+        .foot_right {
+            float:right;
+            margin : 40px 100px 30px 0;
+            text-align: left;
+        }
+        .bottommini {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .name {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            border-left: solid 5px red;
+            padding-left: 10px;
+        }
+        .fastival {
+            display: inline-block;
+            text-align: left;
+            background-color: white;
+            border-radius: 1%;
+        }
+        .fastouter {
+            display: inline-block;
+        }
+        .b_1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .name4 {
+            text-align: center;
+        }
+        .sum {
+            background-color: blu;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .size_1 {
+            width: 150px;
+            height: 100px;
+        }
+        .size_2 {
+            width: 1015px;
+            height: 100px;
+        }
+        .nomal {
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .big {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .big2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .down {
+            font-size: 12px;
+            font-weight: 500;
+            color: gray;
+        }
+        .danger_back {
+            padding: 0 20px;
+            margin: 0 10px;
+        }
+        .back1 {
+            background-image: url(img/back1.png);
+        }
+        .back2 {
+            background-image: url(img/back2.png);
+        }
+        .back3 {
+            background-image: url(img/back3.png);
+        }
+        .now {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom:solid  red 5px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .now_font {
+            color: #CC0000;
+            font-size: 16px;
+        }
+        .bottombig {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: #262626;
+        }
+        .moving {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving :hover {
+        transform: scale(1.07);
+        }
+
+        .topmini2 {
+            font-size: 10px;
+            font-family: "NeoSB";
+            color: #7a7a7a;
+        }
+        </style>
+
+</head>
+
+<body>
+<!--상단 네비게이션 영역-->
+<header>
+    <div class="moving"><a href="index.html"><img src="img/logo.png" height="50px" width="150px"></a></div>
+    <p class=topmini2>당신의 특별한 오사카 여행을 보다 편하게 누릴 수 있도록.</p>
+    <br>
+
+       <ul>
+           <li><a href="history.html">오사카 지역 역사</a></li> &nbsp;&nbsp;&nbsp;
+           <li class="now"><a href="space.html"><p class="now_font">관광지 소개</p></a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="culture.html">오사카 즐길거리</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="tour.html">오사카 여행 정보</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="talk.html">간단한 일본어 회화</a></li>
+       </ul>
+   </header>
+   <nav>
+       <ul>
+           <li><a href="#tag1">관광지 소개</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag2">여행 중 주의할 점</a></li> &nbsp;&nbsp;&nbsp;
+       </ul>
+
+   </nav>
+
+<!--내용 영역-->
+<section class="outer1">
+    <br><br><br>
+    <h2>관광지 소개</h2>
+    <br>
+    <p class="name4">오사카의 전통, 문화는 물론 쇼핑 관광지까지 라인을 눌러 한눈에 확인하세요!</p>
+
+        <br><br><br>
+        <hr width="100%" color="#EEEEEE" noshade/>
+
+        <a id="tag1"></a>
+    <details class="back1">
+        <summary><h3>▼ &nbsp; 전통</h3></summary>
+        <div style="padding-top: 28px;"></div>
+         <table class="fastival">
+            <tr><th rowspan="2" class="size_1"><img src="img/cas.png" width="150px" height="150px"></th><th class="size_2"><div class="big">오사카 성<div><br><div class="down">" 도요토미 히데요시의 권력 상징 "</div><br>
+             <div class="nomal">도요토미 히데요시에 의해 1583년 만들어진 성으로 나고야성, 구마모토성과 함께 일본의 3대 명성으로 꼽힙니다.<br> 이후 도요토미 히데요시 사후, 세키가하라 전투나 세계대전 등 여러 전투로 인해 자주 소실되어 가장 최근에는 1931년 복구되었습니다.<br>천수각 내부에서는 히데요시 시기의 갑옷, 무기 등 다양한 자료들을 관람하거나, 전망대에 올라가 오사카 시내를 내려다 볼 수 있습니다.<br>오사카 주유패스를 구매하셨다면, 천수각 입장과 고자부네 뱃놀이를 무료로 이용하실 수 있습니다!  </div></th></tr>
+            </table>
+
+        <table class="fastival">
+                <tr><th rowspan="2" class="size_1"><img src="img/gobun.png" width="150px" height="150px"></th><th class="size_2"><div class="big">다이센 고분<div><br><div class="down">" 어마어마한 규모의 무덤 "</div><br>
+                 <div class="nomal">다이센 고분은 5세기경에 만들어진 것으로 추정되는 거대한 전방후원분 무덤입니다.<br>현재도 해당 무덤의 주인이 누구인지에 대해서 학계에서는 의견이 분분합니다.<br> 한때. 16대 닌코쿠 천황의 무덤이라는 가설이 존재하였는데 확실히 밝혀진것은 아닙니다.<br>전방후원분의 내부 섬은 현재 들어갈 수 없고, 주위의 해자를 따라 조성된 산책로를 거닐어볼 수 있습니다.</div></th></tr>
+                </table>
+         </table>
+    </details>
+
+    <details class="back2">
+        <summary><h3>▼ &nbsp; 문화</h3></summary>
+        <div style="padding-top: 28px;"></div>
+         <table class="fastival">
+            <tr><th rowspan="2" class="size_1"><img src="img/ukiyoa.png" width="150px" height="150px"></th><th class="size_2"><div class="big">오사카 우키요에 미술관<div><br><div class="down">" 으뜸가는 우키요에 작품들을 감상할 수 있는 박물관 "</div><br>
+             <div class="nomal">"가나가와 해변의 높은 파도 아래" 는 세계적으로 유명한 작품으로, 아마 관광객 여러분들도 보신 적이 있을겁니다.<br>놀랍게도 이 작품의 원본은 현재 오사카 우키요에 미술관에서 전시하고 있습니다.<br>우키요에는 인상파 화가들에게 깊은 영향을 주어 그들의 작품에도 등장하는 에도시기에 시작된 판화입니다.<br>지금 오사카 우키요에 박물관에서 우키요에의 역사를 알아보고 다양한 작품들을 감상할 기회를 가져보세요!</div></th></tr>
+            </table>
+
+        <table class="fastival">
+                <tr><th rowspan="2" class="size_1"><img src="img/osaka museum.png" width="150px" height="150px"></th><th class="size_2"><div class="big">오사카 역사 박물관<div><br><div class="down">" 생생히 느껴보는 유구한 오사카의 역사 "</div><br>
+                 <div class="nomal">오사카를 여행하면서 , 오사카의 문화와 역사에 관심을 가지게될 수 있습니다..<br>그럴 땐, 1400년의 오사카 역사를 생생히 담아놓은 오사카 역사 박물관이 제격입니다.<br>오사카 역사 박물관은 과거 의복과 궁전, 생활상들을 재현해둔 다양한 콘텐츠로 여행자들을 매료하기에 충분합니다.<br>오사카 주유 패스를 구매하셨다면, 박물관의 입장료는 무료입니다!<div class=""></div></div></th></tr>
+                </table>
+         </table>
+    </details>
+
+    <details class="back3">
+        <summary><h3>▼ &nbsp; 쇼핑</h3></summary>
+        <div style="padding-top: 28px;"></div>
+         <table class="fastival">
+            <tr><th rowspan="2" class="size_1"><img src="img/orange.png" width="150px" height="150px"></th><th class="size_2"><div class="big">오렌지 스트릿<div><br><div class="down">" 힙한 편집샵 & 셀렉샵의 거리 "</div><br>
+             <div class="nomal">요츠바시 지역에 위치한 오렌지 스트릿은 오사카 최대의 편집샵 & 셀렉샵이 모여있는 거리입니다.<br>마치 한국의 가로수길과 비슷한 느낌을 가지고 있는 이곳은 젊은 사람들과 많은 관광객으로 붐빕니다.<br>꼼데가르송, 슈프림, 베이프 등.. 인기있는 브랜드의 제품을 만나러 가보는건 어떨까요?<br>곳곳의 숨겨진 맛집과 작은 카페들도 이곳의 매력을 더해줍니다.</div></th></tr>
+            </table>
+
+        <table class="fastival">
+                <tr><th rowspan="2" class="size_1"><img src="img/hanku.png" width="150px" height="150px"></th><th class="size_2"><div class="big">우메다 지역 백화점<div><br><div class="down">" 오사카 고급 쇼핑의 핵심지 "</div><br>
+                 <div class="nomal">일본에 왔으면, 면세와 외국인 혜택을 받는 쇼핑을 빼놓을 수 없습니다.<br>좀 더 고급스럽고, 하이한 쇼핑을 원한다면 우메다의 백화점에 가야할 것 입니다.<br>이곳은 한큐, 다이마루 백화점과 각종 쇼핑몰이 모여있는 쇼핑의 천국입니다. <br>한큐 백화점 1층에서 브랜드 손수건을 구매해보세요! 폴로, 비비안 웨스트우드 등 손수건을 합리적인 가격으로 구매할 수 있습니다.</div></th></tr>
+                </table>
+         </table>
+    </details>
+</section>
+
+<section>
+    <a id="tag2"></a>
+    <br>
+    <table class="danger_back">
+        <tr><th colspan="3" class="big2">여행 중 주의할 점 </th></tr>
+        <tr><td><img src="img/pay.png" height="200px" width="200px"></td><td><img src="img/en.png" height="200px" width="200px"></td><td><img src="img/information.png" height="200px" width="200px"></td></tr>
+        <tr><th>가격표를 볼 때, 소비세를 확인하기</th><th>항상 현금 여유분을 가지고 다니기</th><th>불건전 업소 조심하기</th></tr>
+        <tr><td>일본에서는 소비세가 포함된 가격, 일반 가격을 구분합니다.<br>면세 대상이 아니라면, 소비세 포함 가격으로 체크해주세요!</td><td>일부 가게들에서는 아직 현금결제만 고수하기도 합니다.<br>이런상황에 대비해, 항상 여분의 현금을 지니고 여행하세요!</td><td>화려한 간판에 Information이라고 적힌 가게를 조심하세요!<br>정보센터로 위장한 불건전 업소입니다!</td></tr>
+    </table>
+    <br><br>
+</section>
+
+<!--초기화-->
+<div class="clear"></div>
+
+<!-- 푸터영역 -->
+<footer>
+    <hr width="100%" color="#cccccc" noshade/><br>
+    
+    <div class="foot_left">
+    <img src="img/foot_logo.png" width="100px">
+    </div>
+
+    <div class="foot_right">
+        <p class="bottombig"> O!SAKA WEB SITE copyright &copy; 22261005김기현 <br>
+        <p class="bottombig"> 직무수행능력평가2 ALL RIGHTS RESERVED.<br>
+            2023.12.06 Final Update<br>
+            
+        </p>
+        </div>
+        
+</footer>
+</body>
+</html>

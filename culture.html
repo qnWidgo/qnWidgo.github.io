@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKA WEB</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+     @font-face {
+      font-family: "NeoL";
+      src: url("font/AppleSDGothicNeoL.ttf") format("truetype");
+      font-weight: normal;
+        }
+
+    @font-face {
+      font-family: "NeoUL";
+      src: url("font/AppleSDGothicNeoUL.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        
+    @font-face {
+      font-family: "NeoB";
+      src: url("font/AppleSDGothicNeoB.ttf") format("truetype");
+      font-weight: normal;
+        }       
+
+    @font-face {
+      font-family: "NeoEB";
+      src: url("font/AppleSDGothicNeoEB.ttf") format("truetype");
+      font-weight: normal;
+        }    
+        
+    @font-face {
+      font-family: "NeoSB";
+      src: url("font/AppleSDGothicNeoSB.ttf") format("truetype");
+      font-weight: normal;
+        }     
+
+        .clear {
+            clear : both;
+        }
+        body {
+            text-align: center;
+            font-family:"NeoL";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 150%;
+            width: 1205px;
+            margin: 0 auto;
+            background-image: url(img/bg.png);
+        }
+        header {
+            width: 1205px;
+            height: 150px;
+            padding-top: 40px;
+            text-align: center;
+            background-image: url(img/logoback.png);
+            font-family: "NeoSB";
+        }
+        header li {
+            display: inline-block;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+        nav {
+            width: 1205px;
+            height: 50px;
+            background-color: white;
+            font-family: "NeoSB";
+        }
+        nav ul {
+            background-color: #F0E9F0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        
+        section {
+            float: none;
+            background-color: white;
+        }
+       /* aside {
+            float : left;
+            margin-top: 10px;
+            margin-left: 20px;
+        } */
+        footer {
+            width: 1205px;
+            height: 200px;
+            background-image: url(img/footer_banner2.png);
+        }
+
+        header a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+        } 
+
+        header a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        nav a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        } 
+
+        nav a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        table, tr, td, th {
+        border : solid 0px black;
+        border-style: none;
+        border-collapse: collapse;
+        padding: 20px 20px;
+        margin: 0 10px;
+        line-height: 150%;
+        }
+
+        /* 여기서 부터는 ID, class */
+        .topmini {
+            font-size: 10px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .img1 {
+            float: left;
+            padding : 20px 20px;
+        }
+        .img2 {
+            float: left;
+            padding : 20px 0;
+        }
+        .img3 {
+            float: left;
+            padding : 20px 20px 20px 0;
+
+        }
+        .outer1 { 
+            text-align: center;
+        }
+        .outer2 {
+            width: 800px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer3 {
+            width: 540px;
+            height: 280px;
+            display: inline-block;
+        }
+        .read {
+            padding: 20px 10px 0 10px;
+            display: inline-block;
+        }
+        .foot_left {
+            float:left;
+            margin: 30px 500px 0 100px;
+            text-align: left;
+        }
+        .foot_right {
+            float:right;
+            margin : 40px 100px 30px 0;
+            text-align: left;
+        }
+        .bottommini {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .name {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            border-left: solid 5px red;
+            padding-left: 10px;
+        }
+        #fastival {
+            text-align: left;
+            padding-left: 100px;
+        }
+        .fastouter {
+            display: inline-block;
+        }
+        .b_1 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .name4 {
+            text-align: center;
+        }
+        .now {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom:solid  red 5px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .now_font {
+            color: #CC0000;
+            font-size: 16px;
+        }
+        .bottombig {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: #262626;
+        }
+        .topmini2 {
+            font-size: 10px;
+            font-weight: 300;
+            color: gray;
+            margin-top: 5px;
+        }
+        .line {
+            display: inline-block;
+        }
+        .line2 {
+            text-align: center;
+         }
+         .box {
+            width: 250px;
+         }
+        .moving {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving :hover {
+        transform: scale(1.07);
+        }
+
+        .moving2 {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving2 :hover {
+        transform: scale(1.01);
+        }
+        .topmini3 {
+            font-size: 10px;
+            font-family: "NeoSB";
+            color: #7a7a7a;
+        }
+        </style>
+
+</head>
+
+<body>
+<!--상단 네비게이션 영역-->
+    <header>
+     <div class="moving"><a href="index.html"><img src="img/logo.png" height="50px" width="150px"></a></div>
+     <p class=topmini3>당신의 특별한 오사카 여행을 보다 편하게 누릴 수 있도록.</p>
+     <br>
+
+        <ul>
+            <li><a href="history.html">오사카 지역 역사</a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="space.html">관광지 소개</a></li> &nbsp;&nbsp;&nbsp;
+            <li class="now"><a href="culture.html"><p class="now_font">오사카 즐길거리</p></a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="tour.html">오사카 여행 정보</a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="talk.html">간단한 일본어 회화</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tag1">미니 배너</a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="#tag2">축제 </a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="#tag3">특산물</a></li> &nbsp;&nbsp;&nbsp;
+            <li><a href="#tag4">먹거리</a></li> &nbsp;&nbsp;&nbsp;
+        </ul>
+        <a id="tag1"></a>
+    </nav>
+
+<!--내용영역-->
+    <section class="outer1">
+    <br><br><br>
+    <h2>오사카 즐길거리</h2>
+    <br>
+    <p class="name4">오사카에서 일어나는 재밌는 축제, 특별한 특산물, 맛있는 먹거리를 알아볼까요?</p>
+
+    <br><br><br>
+    <hr width="100%" color="#EEEEEE" noshade/>
+        <br><br>
+        <div class="outer2">
+            <div class="moving2"><div class="img1"><a href="#tag2"><img src="img/rec1.png" height="240px" width="240px"></a></div></div>
+            <div class="moving2"><div class="img2"><a href="#tag3"><img src="img/rec2.png" height="240px" width="240px"></a></div></div>
+            <div class="moving2"><div class="img1"><a href="#tag4"><img src="img/rec3.png" height="240px" width="240px"></a></div></div>
+        </div>
+   
+    
+        <br><br><br>
+        <hr width="100% " color="#EEEEEE" noshade/>
+    </section>    
+    
+    <div class="clear"></div>
+
+    <section id="fastival">
+        <a id="tag2"></a><Br><Br><Br><Br>
+        <div class="fastouter">
+        <h3 class="name">축제</h3>
+        <p class="topmini2">오사카의 다양한 즐거움을 느낄 수 있는 축제를 만끽하세요!</p>
+        <br><br>
+        <table>
+            <tr>
+                <td><img src="img/doka.png" height="200px" width="200px"></td>
+                <td><b class="b_1">도카 에비스 축제</b> <br><br> 기한 : 매년 1월 10일 <br><br>도카 에비스 축제는 대나무 가지를 흔들며 상업의 신 에비스에게 새해 재물운을 기원하는 축제입니다.
+                <br>상인의 도시인 오사카에서 가장 중요하게 여기는 축제중 하나인 도카 에비스 축제에서는<br> 시내의 근로자들이 이마미야에비스 신사에 모여 상업의 신인 에비스에게 공물을 바치고 기원을 올립니다. </td>
+            </tr>
+            <tr>
+                <td><img src="img/matri.png" height="200px" width="200px"></td>
+                <td><b class="b_1">오사카 텐진 마쓰리</b> <br><br> 기한 : 6월말 ~ 7월 25일 <br><br>오사카 텐진 마쓰리는 교토, 도쿄와 함께 일본의 3대 마쓰리로 잘 알려져있습니다.<br>
+                '스이조타키기노', '호코나가시 신지', '갸루 미코시', '이치반 다이코' 등.. <br>행사기간내에 다양한 이벤트가 진행되며 불꽃놀이와 맛있는 음식들은 흥을 돋웁니다.
+                 <br>축제 마지막날 하이라이트로 펼쳐지는 신을 모신 가마 미코시를 선착장까지 육로로 운반하는 ‘리쿠토교’와 <br> 신령을 배에 태워 모시는 ‘후나토교’ 를 꼭 관람하세요!</td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="clear"></div>
+        
+        <a id="tag3"></a><Br><Br><Br><Br>
+        <div class="fastouter">
+        <h3 class="name">특산물</h3>
+        <p class="topmini2">오사카에서 특별하게 생산되는 오사카 특산물을 만나보세요!</p>
+        <br>
+        <table>
+            <tr>
+                <td><img src="img/kongo.png" height="200px" width="200px"></td>
+                <td><b class="b_1">오사카 곤고 대나무 발</b> <br><br> 대나무 발은 흔한 제품같지만, 오사카 곤고의 대나무 발은 다릅니다! <br> 헤이안 시대때부터 유명했던 오사카의 대나무발은 황궁 내부나
+                귀족의 저택에서 주로 쓰였습니다.<br>그중에서도 오사카 곤고산의 고급 대나무가 가장 품질이 좋다고 알려져있습니다. </td>
+            </tr>
+            <tr>
+                <td><img src="img/sakai.png" height="200px" width="200px"></td>
+                <td><b class="b_1">사카이 날붙이</b> <br><br> 사카이 하모노. 일명 사카이 날붙이는 사카이,오사카 지방에서 망치로 두드려 만든 칼을 말합니다.<br>
+                대장장이가 전통적인 기법을 이용해서 만들어서 튼튼하며 가장자리 모양이 아름다워 높은 평가를 받고있습니다.</td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="clear"></div>
+
+        <a id="tag4"></a><Br><Br><Br><Br>
+        <div class="fastouter">
+        <h3 class="name">먹거리</h3>
+        <p class="topmini2">오사카에서 시작된 맛있는 즐거움을 체험해보세요!</p>
+
+        <br>
+        <table>
+            <tr>
+                <td><img src="img/tako.png" height="150px" width="150px"></td>
+                <td><b class="b_1"> 타코야끼</b> <br><br> <p class="box">타코야끼는 문어 조각과 여러 재료를<br>반죽에 넣고, 틀에 구운 요리입니다.<br>
+                작고 동그란 모양이며 김, 우스터 소스를<br>곁들여 먹는 오사카의 별미이지요.</p></td>
+                <td><img src="img/iwaokosi.png" height="150px" width="150px"></td> 
+                <td><b class="b_1">이와 오코시</b> <br><br> <p class="box">이와 오코시는 좁쌀과 설탕으로 만들어낸<br>오사카의 특산물 과자입니다. <br> 약 1195년부터 만들어 먹기 시작하여<br>800년의 역사를 간직한 과자입니다.</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/udon.png" height="150px" width="150px"></td>
+                <td><b class="b_1"> 키츠네 우동</b> <br><br> <p class="box">키츠네 우동은 메이지 시기 오사카의 우동집<br>'우사미 테츠 마츠바야' 에서 시작되었습니다.<br>
+                    유부와, 대파를 곁들인 달큰한 유부우동은<br>여행자들의 허기를 달래주기에 충분합니다!</p></td>
+                <td><img src="img/okonomi.png" height="150px" width="150px"></td> 
+                <td><b class="b_1">오코노미야끼</b> <br><br> <p class="box">오코노미야끼는 잘게썬 양배추, 밀가루, 달걀, 육수를 이용해 반죽한 일본식 부침개입니다.<br>
+                가쓰오부시, 파슬리 등 다양한 가루들을 기호에 맞게 뿌려 먹습니다.</p> </td>
+            </tr>
+               
+        </table>
+        <br><br>
+        </div>
+        </section>
+
+        <!--초기화-->
+        <div class="clear"></div>
+
+<!-- 푸터영역 -->
+<footer>
+    <hr width="100%" color="#cccccc" noshade/><br>
+    
+    <div class="foot_left">
+    <img src="img/foot_logo.png" width="100px">
+    </div>
+
+    <div class="foot_right">
+        <p class="bottombig"> O!SAKA WEB SITE copyright &copy; 22261005김기현 <br>
+        <p class="bottombig"> 직무수행능력평가2 ALL RIGHTS RESERVED.<br>
+            2023.12.06 Final Update<br>
+            
+        </p>
+        </div>
+        
+</footer>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKA WEB</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+    @font-face {
+      font-family: "NeoL";
+      src: url("font/AppleSDGothicNeoL.ttf") format("truetype");
+      font-weight: normal;
+        }
+
+    @font-face {
+      font-family: "NeoUL";
+      src: url("font/AppleSDGothicNeoUL.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        
+    @font-face {
+      font-family: "NeoB";
+      src: url("font/AppleSDGothicNeoB.ttf") format("truetype");
+      font-weight: normal;
+        }       
+
+    @font-face {
+      font-family: "NeoEB";
+      src: url("font/AppleSDGothicNeoEB.ttf") format("truetype");
+      font-weight: normal;
+        }    
+        
+    @font-face {
+      font-family: "NeoSB";
+      src: url("font/AppleSDGothicNeoSB.ttf") format("truetype");
+      font-weight: normal;
+        }     
+        .clear {
+            clear : both;
+        }
+        body {
+            text-align: center;
+            font-family:"NeoL";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 150%;
+            width: 1205px;
+            margin: 0 auto;
+            background-image: url(img/bg.png);
+        }
+        header {
+            width: 1205px;
+            height: 150px;
+            padding-top: 40px;
+            text-align: center;
+            background-image: url(img/logoback.png);
+            font-family: "NeoSB";
+        }
+        header li {
+            display: inline-block;
+        }
+    
+        li {
+            list-style-type: none;
+        }
+        nav {
+            width: 1205px;
+            height: 50px;
+            background-color: white;
+            font-family: "NeoSB";
+        }
+        nav ul {
+            background-color: #F0E9F0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        
+        section {
+            float: none;
+            background-color: white;
+        }
+       /* aside {
+            float : left;
+            margin-top: 10px;
+            margin-left: 20px;
+        } */
+        footer {
+            width: 1205px;
+            height: 200px;
+            background-image: url(img/footer_banner2.png);
+        }
+
+        header a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+        } 
+
+        header a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        nav a:link, a:visited {
+    
+            color:  #333333;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        } 
+
+        nav a:hover, a:active {
+            color: #DC2A27;
+            text-align: center;
+        }
+
+        table {
+        border : solid 1px #E68EA3;
+        border-collapse: collapse;
+        padding: 8px 8px;
+        margin: 0 10px;
+        line-height: 150%;
+        }
+
+        tr {
+        border : solid 1px #E68EA3;
+        border-collapse: collapse;
+        padding: 8px 8px;
+        margin: 0 10px;
+        line-height: 150%;
+        }
+
+        td {
+        border : solid 1px #E68EA3;
+        border-collapse: collapse;
+        padding: 8px 8px;
+        margin: 0 10px;
+        line-height: 150%;
+        }
+
+        th {
+        border : solid 1px #E68EA3;
+        border-collapse: collapse;
+        padding: 8px 8px;
+        margin: 0 10px;
+        line-height: 150%;
+        background-color: #FFE5EB;
+        }
+
+        /* 여기서 부터는 ID, class */
+        .topmini {
+            font-size: 10px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .img1 {
+            float: left;
+            padding : 20px 20px;
+        }
+        .img2 {
+            float: left;
+            padding : 20px 0;
+        }
+        .img3 {
+            float: left;
+            padding : 20px 20px 20px 0;
+
+        }
+        .outer1 { 
+            text-align: center;
+        }
+        .outer2 {
+            width: 800px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer3 {
+            width: 540px;
+            height: 280px;
+            display: inline-block;
+        }
+        .outer4 { 
+            text-align: left;
+        }
+        .read {
+            padding: 20px 10px 0 10px;
+            display: inline-block;
+        }
+        .foot_left {
+            float:left;
+            margin: 30px 500px 0 100px;
+            text-align: left;
+        }
+        .foot_right {
+            float:right;
+            margin : 40px 100px 30px 0;
+            text-align: left;
+        }
+        .bottommini {
+            font-size: 12px;
+            font-family: "NeoUL";
+            color: gray;
+        }
+        .name {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+            border-left: solid 5px red;
+            padding-left: 10px;
+        }
+        #fastival {
+            text-align: left;
+            padding-left: 100px;
+        }
+        .fastouter {
+            display: inline-block;
+            border-collapse: collapse;
+        }
+        .b_1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #h_menu li {
+            display: inline;
+        }
+
+        .name2 {
+            text-align: left;
+            padding-left: 60px;
+            padding-top: 80px;
+        }
+    
+        .name3 {
+            text-align: center;
+            padding: 10px 10px;
+            line-height: 170%;
+            display: inline-block;
+        }
+
+        .tour {
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 30px 10px 30px 10px;
+            
+        }
+        .tour tr {
+            border: solid 1px black;
+            height: 10px;
+        }
+        .tour td {
+            border: solid 1px black;
+            height: 10px;
+        }
+        .tour th {
+            border: solid 1px black;
+            height: 10px;
+        }
+        .plus_infor {
+            font-size: 12px;
+            font-weight: 300;
+            color: gray;
+        }
+        .plus_infor_red {
+            font-size: 12px;
+            font-weight: 500;
+            color: red;
+            text-decoration: underline;
+        }
+        .back {
+            background-color: #F7B8BB;
+        }
+        .back_2 {
+            background-color: #FFEAEA;
+        }
+        .name4 {
+            text-align: center;
+        }
+        .last { 
+            border-style: solid;
+            border: solid 0px red;
+            background: none;
+        }
+        .last2 { 
+            border-style: solid;
+            border: solid 1px #808080;
+            background: none;
+        }
+        .now {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom:solid  red 5px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .now_font {
+            color: #CC0000;
+            font-size: 16px;
+        }
+        .bottombig {
+            font-size: 12px;
+            color: #262626;
+            font-family: "NeoUL";
+        }
+        .point {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .first {
+            background-color: #FFCDDE;
+        }
+        .moving {
+        transition: transform 0.3s ease-in-out;
+        }
+
+        .moving :hover {
+        transform: scale(1.07);
+        }
+
+        .topmini2 {
+            font-size: 10px;
+            font-family: "NeoSB";
+            color: #7a7a7a;
+        }
+        </style>
+</head>
+
+<body>
+<!--상단 네비게이션 영역-->
+<header>
+    <div class="moving"><a href="index.html"><img src="img/logo.png" height="50px" width="150px"></a></div>
+    <p class="topmini2">당신의 특별한 오사카 여행을 보다 편하게 누릴 수 있도록.</p>
+    <br>
+
+       <ul>
+           <li><a href="history.html">오사카 지역 역사</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="space.html">관광지 소개</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="culture.html">오사카 즐길거리</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="tour.html">오사카 여행 정보</a></li> &nbsp;&nbsp;&nbsp;
+           <li class="now"><a href="talk.html"><p class="now_font">간단한 일본어 회화</p></a></li>
+       </ul>
+   </header>
+   <nav>
+       <ul>
+           <li><a href="#tag1">일본어 소개</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag2">기본 회화 익히기</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag3">주의해야 할 표현</a></li> &nbsp;&nbsp;&nbsp;
+           <li><a href="#tag4">회화 참고 사이트</a></li> &nbsp;&nbsp;&nbsp;
+
+       </ul>
+   </nav>
+
+    <section class="outer1">
+        <br><br><br>
+        <h2>간단한 일본어 회화</h2>
+        <br>
+        <p class="name4">여행시 필요한 기본회화를 미리 확인하세요.</p>
+    
+            <br><br><br>
+            <hr width="100%" color="#EEEEEE" noshade/>
+
+</section>  
+
+<section class="name2">
+        <a id="tag1"></a>
+        <h3 class = "name">일본어란?</h3> <br><br> 
+</section>
+<section>
+        <div class="name4"><img src="img/lang.jpg" height="150px"></div>
+    
+    <div class="name4">
+        <br>
+        <p>:</p>
+        <br>
+        <p class="name4">일본어는 "일본"에서 사용하는 교착어입니다.</p>
+        <p>일본어에서는 히라가나, 가타카나, 한자를 문자로 이용하고 있습니다.</p>
+        <p>이런 문자들을 혼용하여, 띄어쓰기 없이 문장을 작성하는데요, 그렇다면 기본적인 회화를 알아볼까요?</p>
+    </div>
+    <a id="tag2"></a>
+    <br><br><hr width="100%" color="#EEEEEE" noshade/>
+</section>
+
+<section class="name2">
+
+        <h3 class = "name">기본 회화 익히기</h3> <br><br> 
+        </section>
+    
+<section>
+            <div class="outer1">
+            <div class="fastouter">
+
+            <table>
+                <tr><th colspan="4" class="first">기본 인사말</th></tr>
+                <tr><th rowspan="3">인사하기</th><td>おはようございます</td><td>오하요-고자이마스</td><td>안녕하세요 (아침인사)</td></tr>
+                <tr><td>こんにちは</td><td>곤니찌와</td><td>안녕하세요 (점심인사)</td></tr>
+                <tr><td>こんばんは</td><td>곰방와</td><td>안녕하세요 (저녁인사)</td></tr>
+                <tr><th rowspan="2">감사하기</th><td>ありがとうございます</td><td>아리가토-고자이마스</td><td>고맙습니다 (존칭표현)</td></tr>
+                <tr><td>どういたしまして</td><td>도-이타시마시떼</td><td>천만에요</td></tr>
+                <tr><th rowspan="2">사과하기</th><td>誠に申し訳ございません。</td><td>마코토니모우시와케-고자이마센</td><td>대단히 죄송합니다 (정중한표현)</td></tr>
+                <tr><td>すみません</td><td>스미마셍</td><td>죄송합니다.</td></tr>
+            </table>
+            <br><br>
+            </div></div>
+
+            <div class="outer1">
+            <div class="fastouter">
+            <table>
+                <tr><th colspan="4" class="first">쇼핑할 때 쓰는 표현</th></tr>
+                <tr><th rowspan="2">상품찾기</th><td>スカート を 探して います。</td><td>스카-토 오 사가시떼 이마스.</td><td>스커트를 찾고 있습니다.</td></tr>
+                <tr><td>あれを 見せて いただけますか。</td><td>아레오 미세떼 이따다께마스까?</td><td>저것 좀 보여주시겠습니까?</td></tr>
+                <tr><th rowspan="2">사이즈 바꾸기</th><td>ちょっと 大きい（小さい）です</td><td>춋또 오-키이(치-사이)데스.</td><td>좀 큽니다.(작습니다.)</td></tr>
+                <tr><td>もっと　小さい（大きい/いい）のは　ありませんか。</td><td>못또 치-사이(오-키이)노와 아리마셍까.</td><td>좀 더 작은(큰) 것은 없습니까?</td></tr>
+            </table>
+            <br><br>
+            </div></div>
+            
+            <div class="outer1">
+            <div class="fastouter">
+            <table>
+                <tr><th colspan="4" class="first">위급 상황시 표현</th></tr>
+                <tr><th rowspan="2">분실상황</th><td>忘れ物をしました。 どうすればいいですか？</td><td>오토시모노오 시마시타 도우스레바 이이데스까?</td><td>물건을 잃어버렸어요. 어떻게 하면 좋죠?</td></tr>
+                <tr><td>航空券をなくしてしまいました</td><td>고쿠켄오 나쿠시마시타</td><td>항공권을 잃어버렸어요.</td></tr>
+                <tr><th rowspan="2">의료문제상황</th><td>お腹が痛いです</td><td>오나카가 이타이데스</td><td>배가 아픕니다.</td></tr>
+                <tr><td>熱があります</td><td>네츠가 아리마스</td><td>열이 납니다.</td></tr>
+            </table>
+            </div>
+            </div>
+            <a id="tag3"></a>
+            <br><br><hr width="100%" color="#EEEEEE" noshade/>
+</section>
+
+<section class="name2">
+    <h3 class = "name">주의해야 할 표현</h3> <br>
+</section>
+
+<section>
+<div class="name3">
+    <p><b class="point">1. '명령형'을 사용하지 않기</b></p><br>
+    <p>한국에서는 명령형 문장이 약한 의미를 나타내거나 여러 방면으로 활용되는 경우가 많습니다.</p>
+    <p>그러나, 일본에서의 명령문은 말 그대로 명령을 내리는 강한 의미로 쓰이기 때문에 건방지거나 예의없어 보일 수 있습니다.</p>
+    <br><br>
+    <p><b class="point">2. '욕설'을 조심하기</b></p><br>
+    <p>우리는 애니메이션이나, 여러 매체를 통해 일본의 비속어를 접할 수 있습니다.</p>
+    <p>예를 들어 테메(니 녀석) -야로(-한 자식)등 의 표현을 접해본 적이있을텐데요.</p>
+    <p>이 표현들은 우리에겐 가볍게 인식될 수 있지만, 당연하게도 일본내에서는 무례하게 들릴 수 있습니다.</p>
+    <br><br>
+    <p><b class="point">3. '당신' 표현 주의하기 </b></p><br>
+    <p>한국어로 해석했을때 '당신'이라는 표현은 나름 정중해보이기도 합니다.</p>
+    <p>그러나, 일본에서는 무례한 표현으로 보일 수 있습니다.</p>
+    <p>당신 즉, "아나타"라는 표현은 초면에 잘 사용하지 않고 친분이 있는 대상에게 사용합니다.</p>
+    <p>보통은 상대의 이름뒤에 -상 을 붙여 '미즈코상' 과 같은 식의 표현을 사용합니다.</p>
+</div>
+<br><br><br><hr width="100%" color="#EEEEEE" noshade/>
+</section>
+
+<section class="name2">
+    <a id="tag4"></a>
+    <h3 class = "name">회화 참고 사이트</h3> <br>
+</section>
+
+<section class="outer1">
+<div class="fastouter">
+    <br><p class="name4" style="font-family: NEOUL;">※ 위 내용들 외에도 회화시 도움이 되는 사이트들입니다.</p><br>
+
+    <table class="last">
+        <tr class="last"><th class="last">일본 관광청</th> <th class="last">라이브 재팬</th> <th class="last">파파고</th></tr>
+        <tr class="last"><th class="last"><img src="img/japan.png" height="150px" width="150px"></th> <th class="last"><img src="img/live.png" height="150px" width="150px"></th> <th class="last"><img src="img/papago.png" height="150px" width="150px"></th></tr>
+    </table>
+    <br><br><br>    
+</div>
+</section>
+
+<!--초기화-->
+<div class="clear"></div>
+
+<!-- 푸터영역 -->
+<footer>
+    <hr width="100%" color="#cccccc" noshade/><br>
+    
+    <div class="foot_left">
+    <img src="img/foot_logo.png" width="100px">
+    </div>
+
+    <div class="foot_right">
+        <p class="bottombig"> O!SAKA WEB SITE copyright &copy; 22261005김기현 <br>
+        <p class="bottombig"> 직무수행능력평가2 ALL RIGHTS RESERVED.<br>
+            2023.12.06 Final Update<br>
+            
+        </p>
+        </div>
+        
+</footer>
+</body>
+</html>
